@@ -207,7 +207,7 @@
       <label>Itens</label>
       <table class="items-table" id="itemsTable">
         <thead>
-          <tr><th style="width:42%">Descrição</th><th style="width:15%">Unidade</th><th style="width:15%">Qtd.</th><th style="width:18%">Prioridade</th><th></th></tr>
+          <tr><th style="width:32%">Descrição</th><th style="width:13%">Tipo</th><th style="width:13%">Unidade</th><th style="width:13%">Qtd.</th><th style="width:18%">Prioridade</th><th></th></tr>
         </thead>
         <tbody id="itemsBody"></tbody>
       </table>
@@ -449,11 +449,16 @@
   }
 
   // ---------------- item rows (form obra) ----------------
-  function addItemRow(desc, un, qtd, prio){
+  function addItemRow(desc, un, qtd, prio, tipo){
+    tipo = tipo || "material";
     const tbody = document.getElementById("itemsBody");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td><input type="text" class="it-desc" placeholder="Ex: Parafuso 3/8 x 2''" value="${desc||''}"></td>
+      <td><input type="text" class="it-desc" placeholder="Ex: Parafuso 3/8 x 2'' ou Manutenção elétrica" value="${desc||''}"></td>
+      <td><select class="it-tipo">
+        <option value="material" ${tipo==='material'?'selected':''}>Material</option>
+        <option value="servico" ${tipo==='servico'?'selected':''}>Serviço</option>
+      </select></td>
       <td><select class="it-un">${UNIDADES.map(u=>`<option ${u===un?'selected':''}>${u}</option>`).join('')}</select></td>
       <td><input type="number" min="0" step="0.01" class="it-qtd" value="${qtd||1}"></td>
       <td><select class="it-prio">${PRIORIDADES.map(p=>`<option value="${p.v}" ${p.v===prio?'selected':''}>${p.l}</option>`).join('')}</select></td>
@@ -462,17 +467,35 @@
     tr.querySelector(".rm-item").addEventListener("click", ()=>{
       if(document.getElementById("itemsBody").children.length > 1) tr.remove();
     });
+    const tipoSel = tr.querySelector(".it-tipo");
+    tipoSel.addEventListener("change", ()=> applyTipoState(tr));
     tbody.appendChild(tr);
+    applyTipoState(tr);
+  }
+
+  function applyTipoState(tr){
+    const isServico = tr.querySelector(".it-tipo").value === "servico";
+    const unEl = tr.querySelector(".it-un");
+    const qtdEl = tr.querySelector(".it-qtd");
+    unEl.disabled = isServico;
+    qtdEl.disabled = isServico;
+    unEl.style.opacity = isServico ? .4 : 1;
+    qtdEl.style.opacity = isServico ? .4 : 1;
   }
 
   function readItemRows(){
     const rows = [...document.querySelectorAll("#itemsBody tr")];
-    return rows.map(tr => ({
-      descricao: tr.querySelector(".it-desc").value.trim(),
-      unidade: tr.querySelector(".it-un").value,
-      quantidade: parseFloat(tr.querySelector(".it-qtd").value) || 0,
-      prioridade: tr.querySelector(".it-prio").value
-    })).filter(it => it.descricao);
+    return rows.map(tr => {
+      const tipo = tr.querySelector(".it-tipo").value;
+      const isServico = tipo === "servico";
+      return {
+        descricao: tr.querySelector(".it-desc").value.trim(),
+        tipo,
+        unidade: isServico ? "" : tr.querySelector(".it-un").value,
+        quantidade: isServico ? null : (parseFloat(tr.querySelector(".it-qtd").value) || 0),
+        prioridade: tr.querySelector(".it-prio").value
+      };
+    }).filter(it => it.descricao);
   }
 
   function todayStr(){
@@ -521,7 +544,7 @@
     document.getElementById("fData").value = isoToDateInputValue(s.dataCriacao);
     document.getElementById("fObs").value = s.observacoes || "";
     document.getElementById("itemsBody").innerHTML = "";
-    s.itens.forEach(it => addItemRow(it.descricao, it.unidade, it.quantidade, it.prioridade));
+    s.itens.forEach(it => addItemRow(it.descricao, it.unidade, it.quantidade, it.prioridade, it.tipo || "material"));
     document.getElementById("viewObra").scrollIntoView({behavior:"smooth", block:"start"});
   }
 
@@ -625,7 +648,7 @@
     const itemsHtml = s.itens.map(it => `
       <li>
         <span>${it.descricao} <span class="prio prio-${it.prioridade}">${PRIORIDADES.find(p=>p.v===it.prioridade)?.l||it.prioridade}</span></span>
-        <span class="qtd">${it.quantidade} ${it.unidade}</span>
+        <span class="qtd">${it.tipo === 'servico' ? 'Serviço' : (it.quantidade + ' ' + it.unidade)}</span>
       </li>`).join("");
 
     const statusClass = {pendente:"pendente",analise:"analise",oc:"oc",concluida:"concluida",cancelada:"cancelada"}[s.status] || "pendente";
@@ -839,7 +862,7 @@
     document.getElementById("ocDataEntrega").value = s.oc?.dataEntrega || s.previsaoEntrega || "";
     document.getElementById("ocObs").value = s.oc?.obs || s.observacoes || "";
     document.getElementById("ocItemsBody").innerHTML = s.itens.map(it => `
-      <tr><td>${it.descricao}</td><td>${it.unidade}</td><td>${it.quantidade}</td>
+      <tr><td>${it.descricao}${it.tipo==='servico'?' <span class="prio" style="background:#E3E8EA;color:var(--ink-soft);">Serviço</span>':''}</td><td>${it.tipo==='servico'?'—':it.unidade}</td><td>${it.tipo==='servico'?'—':it.quantidade}</td>
       <td><span class="prio prio-${it.prioridade}">${PRIORIDADES.find(p=>p.v===it.prioridade)?.l||it.prioridade}</span></td></tr>
     `).join("");
     document.getElementById("ocOverlay").classList.add("show");
