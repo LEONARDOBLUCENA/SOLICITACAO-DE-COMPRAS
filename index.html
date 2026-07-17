@@ -93,6 +93,12 @@
   .stamp.concluida{color:var(--success);border-color:var(--success);}
   .stamp.cancelada{color:var(--danger);border-color:var(--danger);}
 
+  .prev-badge{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:600;color:var(--steel);background:#E7EEF2;padding:4px 9px;border-radius:8px;white-space:nowrap;}
+  .prev-badge.set{color:#8A5E00;background:#F7E9C6;}
+  .prev-row{display:flex;align-items:center;gap:8px;}
+  .prev-row label{margin:0;font-size:10px;}
+  .prev-row input[type=date]{width:auto;padding:6px 8px;font-size:12px;}
+
   .prio{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border-radius:8px;}
   .prio-baixa{background:#E3E8EA;color:var(--ink-soft);}
   .prio-normal{background:#DCE6EC;color:var(--steel);}
@@ -230,14 +236,14 @@
 <div class="config-overlay" id="configOverlay">
   <div class="modal">
     <h3>Configurar repositório</h3>
-    <p class="hint" style="margin-top:-8px;">Os dados são salvos como <span class="mono">data.json</span> num repositório GitHub, do mesmo jeito que os outros BIs.</p>
+    <p class="hint" style="margin-top:-8px;">O repositório já vem configurado dentro do próprio arquivo (dado embutido, como nos outros BIs). Só use isso aqui se precisar testar com outro repositório/token temporariamente neste navegador.</p>
     <div class="field">
       <label>Owner (usuário/organização)</label>
       <input type="text" id="cfgOwner" placeholder="leonardoblucena">
     </div>
     <div class="field">
       <label>Repositório</label>
-      <input type="text" id="cfgRepo" placeholder="SOLICITACAO-COMPRA">
+      <input type="text" id="cfgRepo" placeholder="SOLICITACAO-DE-COMPRAS">
     </div>
     <div class="field">
       <label>Branch</label>
@@ -309,11 +315,35 @@
   let ocTargetId = null;
 
   // ---------------- config ----------------
+  // ---------------- config embutida (mesmo padrão dos outros BIs) ----------------
+  // Preencha as 3 partes abaixo com o seu token, dividido em pedaços quaisquer.
+  // Ex: se o token é "ghp_ABCDEF123456", pode dividir como:
+  //   TK_P1 = "ghp_ABCD"   TK_P2 = "EF12"   TK_P3 = "3456"
+  // (não precisa ser dividido em partes iguais, qualquer corte serve)
+  const TK_P1 = "COLE_AQUI_A_PARTE_1_DO_TOKEN";
+  const TK_P2 = "COLE_AQUI_A_PARTE_2_DO_TOKEN";
+  const TK_P3 = "COLE_AQUI_A_PARTE_3_DO_TOKEN";
+
+  const EMBEDDED_CONFIG = {
+    owner: "leonardoblucena",
+    repo: "SOLICITACAO-DE-COMPRAS",
+    branch: "main",
+    token: TK_P1 + TK_P2 + TK_P3
+  };
+
   function getConfig(){
-    try{ return JSON.parse(localStorage.getItem("sc_config") || "{}"); }catch(e){ return {}; }
+    try{
+      const stored = JSON.parse(localStorage.getItem("sc_config") || "{}");
+      if(configComplete(stored)) return stored; // permite sobrepor via engrenagem se precisar
+    }catch(e){}
+    return EMBEDDED_CONFIG;
   }
   function setConfig(cfg){ localStorage.setItem("sc_config", JSON.stringify(cfg)); }
-  function configComplete(cfg){ return cfg && cfg.owner && cfg.repo && cfg.branch && cfg.token; }
+  function configComplete(cfg){
+    if(!(cfg && cfg.owner && cfg.repo && cfg.branch && cfg.token)) return false;
+    if(cfg.token.includes("COLE_AQUI")) return false;
+    return true;
+  }
 
   function refreshRepoLabel(){
     const cfg = getConfig();
@@ -461,6 +491,7 @@
       obra, solicitante, itens, observacoes: obs,
       status: "pendente",
       dataCriacao: new Date().toISOString(),
+      previsaoEntrega: null,
       oc: null
     };
 
@@ -504,11 +535,18 @@
           <option value="concluida" ${s.status==='concluida'?'selected':''}>Concluída</option>
           <option value="cancelada" ${s.status==='cancelada'?'selected':''}>Cancelada</option>
         </select>
+        <div class="prev-row">
+          <label>Previsão entrega</label>
+          <input type="date" class="previsaoInput" data-id="${s.id}" value="${s.previsaoEntrega||''}">
+        </div>
         <button class="btn btn-steel gerarOcBtn" data-id="${s.id}" style="padding:8px 16px;font-size:13px;">Gerar OC</button>
       `;
     }
 
     const ocInfo = s.oc ? `<div class="obs">OC: <strong>${s.oc.numeroErp||'—'}</strong> · Fornecedor: ${s.oc.fornecedor||'—'}</div>` : "";
+    const prevBadge = s.previsaoEntrega
+      ? `<span class="prev-badge set">🚚 Previsão: ${fmtDate(s.previsaoEntrega)}</span>`
+      : (opts.escritorio ? "" : `<span class="prev-badge">Previsão ainda não informada</span>`);
 
     return `
       <div class="slip">
@@ -523,7 +561,10 @@
               <p class="obra-name">${s.obra}</p>
               <div class="meta">Solicitante: ${s.solicitante}</div>
             </div>
-            <span class="stamp ${statusClass}">${STATUS_LABEL[s.status]||s.status}</span>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
+              <span class="stamp ${statusClass}">${STATUS_LABEL[s.status]||s.status}</span>
+              ${prevBadge}
+            </div>
           </div>
           <ul class="items-list">${itemsHtml}</ul>
           ${s.observacoes ? `<div class="obs">"${s.observacoes}"</div>` : ""}
@@ -597,6 +638,26 @@
     el.querySelectorAll(".gerarOcBtn").forEach(btn=>{
       btn.addEventListener("click", ()=> openOcModal(btn.dataset.id));
     });
+
+    el.querySelectorAll(".previsaoInput").forEach(inp=>{
+      inp.addEventListener("change", async (e)=>{
+        const id = e.target.dataset.id;
+        const item = DATA.solicitacoes.find(s=>s.id===id);
+        if(!item) return;
+        const anterior = item.previsaoEntrega;
+        item.previsaoEntrega = e.target.value;
+        if(item.oc) item.oc.dataEntrega = e.target.value;
+        try{
+          await saveData("Define previsão de entrega para " + item.numero);
+          showToast(item.numero + ": previsão de entrega salva.");
+          renderAll();
+        }catch(err){
+          item.previsaoEntrega = anterior;
+          showToast("Erro ao salvar previsão: " + err.message);
+          renderAll();
+        }
+      });
+    });
   }
 
   // ---------------- OC modal ----------------
@@ -608,7 +669,7 @@
     document.getElementById("ocNumeroErp").value = s.oc?.numeroErp || "";
     document.getElementById("ocFornecedor").value = s.oc?.fornecedor || "";
     document.getElementById("ocCondPag").value = s.oc?.condPag || "";
-    document.getElementById("ocDataEntrega").value = s.oc?.dataEntrega || "";
+    document.getElementById("ocDataEntrega").value = s.oc?.dataEntrega || s.previsaoEntrega || "";
     document.getElementById("ocObs").value = s.oc?.obs || s.observacoes || "";
     document.getElementById("ocItemsBody").innerHTML = s.itens.map(it => `
       <tr><td>${it.descricao}</td><td>${it.unidade}</td><td>${it.quantidade}</td>
@@ -637,7 +698,9 @@
     if(!s) return;
     const prevStatus = s.status;
     const prevOc = s.oc;
+    const prevPrevisao = s.previsaoEntrega;
     s.oc = readOcForm();
+    if(s.oc.dataEntrega) s.previsaoEntrega = s.oc.dataEntrega;
     if(markAsGenerated) s.status = "oc";
     try{
       await saveData("Registra OC para " + s.numero);
@@ -647,6 +710,7 @@
     }catch(e){
       s.status = prevStatus;
       s.oc = prevOc;
+      s.previsaoEntrega = prevPrevisao;
       showToast("Erro ao salvar OC: " + e.message);
     }
   }
@@ -655,7 +719,7 @@
   function openConfig(){
     const cfg = getConfig();
     document.getElementById("cfgOwner").value = cfg.owner || "";
-    document.getElementById("cfgRepo").value = cfg.repo || "SOLICITACAO-COMPRA";
+    document.getElementById("cfgRepo").value = cfg.repo || "SOLICITACAO-DE-COMPRAS";
     document.getElementById("cfgBranch").value = cfg.branch || "main";
     document.getElementById("cfgToken").value = cfg.token || "";
     document.getElementById("cfgStatus").style.display = "none";
