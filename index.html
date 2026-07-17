@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solicitação de Compra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1B2430;
+    --ink-soft:#3A4553;
+    --paper:#F1EFE9;
+    --card:#FBFAF7;
+    --accent:#F5B700;
+    --accent-ink:#1B2430;
+    --steel:#3D5A73;
+    --steel-light:#5E7C93;
+    --line:#D8D4C8;
+    --danger:#B23A2E;
+    --success:#2E6B3E;
+    --warn:#A9760C;
+    --radius:2px;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;-webkit-font-smoothing:antialiased;}
+  h1,h2,h3,.display{font-family:'Barlow Condensed',sans-serif;text-transform:uppercase;letter-spacing:.03em;}
+  .mono{font-family:'JetBrains Mono',monospace;}
+
+  /* ---------- header ---------- */
+  header.app{background:var(--ink);color:#fff;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;position:sticky;top:0;z-index:40;border-bottom:3px solid var(--accent);}
+  header.app .brand{display:flex;align-items:center;gap:10px;}
+  header.app .brand .mark{width:34px;height:34px;background:var(--accent);color:var(--accent-ink);display:flex;align-items:center;justify-content:center;font-family:'Barlow Condensed';font-weight:700;font-size:15px;transform:rotate(-3deg);}
+  header.app h1{font-size:22px;margin:0;line-height:1;}
+  header.app .sub{font-size:11px;color:#B9C1CC;letter-spacing:.08em;text-transform:uppercase;margin-top:2px;}
+  .profile-switch{display:flex;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);}
+  .profile-switch button{background:none;border:none;color:#C7CDD6;padding:8px 16px;font-family:'Barlow Condensed';font-weight:600;letter-spacing:.05em;text-transform:uppercase;font-size:14px;cursor:pointer;}
+  .profile-switch button.active{background:var(--accent);color:var(--accent-ink);}
+  .icon-btn{background:none;border:1px solid rgba(255,255,255,.25);color:#fff;width:36px;height:36px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;}
+  .icon-btn:hover{border-color:var(--accent);color:var(--accent);}
+
+  main{max-width:980px;margin:0 auto;padding:24px 18px 60px;}
+  .panel{background:var(--card);border:1px solid var(--line);padding:22px;margin-bottom:22px;}
+  .panel h2{font-size:24px;margin:0 0 4px;color:var(--ink);}
+  .panel .hint{font-size:13px;color:var(--ink-soft);margin:0 0 18px;}
+
+  label{display:block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:5px;}
+  input[type=text],input[type=number],input[type=date],select,textarea{width:100%;padding:9px 10px;border:1px solid var(--line);background:#fff;font-family:'Inter';font-size:14px;color:var(--ink);border-radius:var(--radius);}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--steel);outline-offset:1px;}
+  textarea{resize:vertical;min-height:56px;}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+  @media(max-width:600px){.row{grid-template-columns:1fr;}}
+
+  .items-table{width:100%;border-collapse:collapse;margin:10px 0 6px;}
+  .items-table th{text-align:left;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);padding:0 8px 6px;border-bottom:1px solid var(--line);}
+  .items-table td{padding:5px 6px;vertical-align:top;}
+  .items-table input,.items-table select{padding:7px 8px;font-size:13px;}
+  .rm-item{background:none;border:none;color:var(--danger);cursor:pointer;font-size:18px;line-height:1;padding:4px 8px;}
+  .add-item{background:none;border:1px dashed var(--steel);color:var(--steel);padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer;margin-top:4px;}
+  .add-item:hover{background:rgba(61,90,115,.07);}
+
+  .btn{border:none;padding:11px 22px;font-family:'Barlow Condensed';font-weight:600;font-size:16px;letter-spacing:.04em;text-transform:uppercase;cursor:pointer;border-radius:var(--radius);}
+  .btn-primary{background:var(--accent);color:var(--accent-ink);}
+  .btn-primary:hover{background:#e0aa00;}
+  .btn-ghost{background:none;border:1px solid var(--ink);color:var(--ink);}
+  .btn-steel{background:var(--steel);color:#fff;}
+  .btn-steel:hover{background:#33495e;}
+  .btn:disabled{opacity:.5;cursor:not-allowed;}
+
+  /* ---------- requisition slip cards ---------- */
+  .slip{display:flex;background:var(--card);border:1px solid var(--line);margin-bottom:14px;position:relative;}
+  .slip .stub{width:110px;flex-shrink:0;background:var(--ink);color:#fff;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px 8px;position:relative;}
+  .slip .stub .num{font-family:'JetBrains Mono';font-weight:700;font-size:15px;letter-spacing:.03em;}
+  .slip .stub .date{font-size:10px;color:#B9C1CC;margin-top:4px;text-align:center;}
+  .perf{position:absolute;right:-1px;top:0;bottom:0;width:0;border-right:2px dashed #C9C4B4;}
+  .perf::before,.perf::after{content:"";position:absolute;right:-7px;width:12px;height:12px;background:var(--paper);border-radius:50%;border:1px solid var(--line);}
+  .perf::before{top:-6px;} .perf::after{bottom:-6px;}
+  .slip .body{flex:1;padding:14px 18px;min-width:0;}
+  .slip .top-row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap;}
+  .slip .obra-name{font-family:'Barlow Condensed';font-size:20px;font-weight:600;margin:0;}
+  .slip .meta{font-size:12px;color:var(--ink-soft);margin-top:2px;}
+  .slip .items-list{margin:10px 0 0;padding:0;list-style:none;font-size:13px;}
+  .slip .items-list li{display:flex;justify-content:space-between;padding:4px 0;border-bottom:1px solid #EDEBE3;gap:10px;}
+  .slip .items-list li:last-child{border-bottom:none;}
+  .slip .qtd{font-family:'JetBrains Mono';color:var(--ink-soft);white-space:nowrap;}
+  .slip .obs{font-size:12px;color:var(--ink-soft);margin-top:8px;font-style:italic;}
+  .slip .actions{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center;}
+
+  .stamp{display:inline-block;font-family:'Barlow Condensed';font-weight:700;font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border:2px solid;transform:rotate(-3deg);border-radius:3px;}
+  .stamp.pendente{color:var(--warn);border-color:var(--warn);}
+  .stamp.analise{color:var(--steel);border-color:var(--steel);}
+  .stamp.oc{color:var(--success);border-color:var(--success);}
+  .stamp.concluida{color:var(--success);border-color:var(--success);}
+  .stamp.cancelada{color:var(--danger);border-color:var(--danger);}
+
+  .prio{font-size:10px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:1px 7px;border-radius:8px;}
+  .prio-baixa{background:#E3E8EA;color:var(--ink-soft);}
+  .prio-normal{background:#DCE6EC;color:var(--steel);}
+  .prio-alta{background:#F7E1B5;color:#8A5E00;}
+  .prio-urgente{background:#F3D4CF;color:var(--danger);}
+
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px;}
+  .filters select,.filters input{width:auto;min-width:150px;}
+
+  .empty{text-align:center;padding:40px 20px;color:var(--ink-soft);}
+  .empty .big{font-size:15px;}
+
+  .config-overlay,.oc-overlay{position:fixed;inset:0;background:rgba(27,36,48,.55);display:none;align-items:center;justify-content:center;z-index:80;padding:20px;}
+  .config-overlay.show,.oc-overlay.show{display:flex;}
+  .modal{background:var(--card);max-width:460px;width:100%;padding:24px;border-top:4px solid var(--accent);max-height:90vh;overflow-y:auto;}
+  .modal h3{margin-top:0;}
+  .modal .field{margin-bottom:12px;}
+  .modal-actions{display:flex;justify-content:flex-end;gap:10px;margin-top:18px;}
+  .status-msg{font-size:12px;margin-top:10px;padding:8px 10px;border-radius:2px;}
+  .status-msg.ok{background:#E4EFE6;color:var(--success);}
+  .status-msg.err{background:#F5E2DF;color:var(--danger);}
+
+  .oc-modal{background:#fff;max-width:600px;width:100%;padding:0;}
+  .oc-head{background:var(--ink);color:#fff;padding:16px 24px;display:flex;justify-content:space-between;align-items:center;}
+  .oc-head h3{margin:0;color:#fff;}
+  .oc-body{padding:22px 24px;}
+  .oc-body table{width:100%;border-collapse:collapse;margin-top:12px;}
+  .oc-body th{text-align:left;font-size:10px;text-transform:uppercase;color:var(--ink-soft);border-bottom:1px solid var(--line);padding:6px 4px;}
+  .oc-body td{padding:6px 4px;font-size:13px;border-bottom:1px solid #EDEBE3;}
+  .oc-foot{padding:16px 24px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:10px;}
+
+  .close-x{background:none;border:none;color:#fff;font-size:20px;cursor:pointer;}
+  .toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;font-size:13px;border-left:4px solid var(--accent);z-index:100;display:none;}
+  .toast.show{display:block;}
+
+  .loading-row{display:flex;align-items:center;gap:8px;color:var(--ink-soft);font-size:13px;padding:10px 0;}
+
+  @media print{
+    header.app,.no-print,.oc-foot,.oc-head{display:none !important;}
+    body{background:#fff;}
+    .oc-overlay{position:static;background:none;display:block !important;}
+    .oc-modal{box-shadow:none;max-width:100%;}
+    .oc-body{padding:0;}
+  }
+</style>
+</head>
+<body>
+
+<header class="app">
+  <div class="brand">
+    <div class="mark">SC</div>
+    <div>
+      <h1>Solicitação de Compra</h1>
+      <div class="sub" id="repoLabel">configure o repositório</div>
+    </div>
+  </div>
+  <div style="display:flex;align-items:center;gap:10px;">
+    <div class="profile-switch">
+      <button id="btnObra" class="active">Obra</button>
+      <button id="btnEscritorio">Escritório</button>
+    </div>
+    <button class="icon-btn no-print" id="btnConfig" title="Configurar repositório GitHub">⚙</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== VIEW: OBRA ===================== -->
+  <div id="viewObra">
+    <div class="panel">
+      <h2>Nova solicitação</h2>
+      <p class="hint">Preencha os itens necessários. O escritório vai visualizar e providenciar a ordem de compra.</p>
+
+      <div class="row">
+        <div>
+          <label>Obra / Centro de custo</label>
+          <input type="text" id="fObra" placeholder="Ex: SPE Montagnes">
+        </div>
+        <div>
+          <label>Solicitante</label>
+          <input type="text" id="fSolicitante" placeholder="Seu nome">
+        </div>
+      </div>
+
+      <label>Itens</label>
+      <table class="items-table" id="itemsTable">
+        <thead>
+          <tr><th style="width:42%">Descrição</th><th style="width:15%">Unidade</th><th style="width:15%">Qtd.</th><th style="width:18%">Prioridade</th><th></th></tr>
+        </thead>
+        <tbody id="itemsBody"></tbody>
+      </table>
+      <button type="button" class="add-item" id="addItemBtn">+ adicionar item</button>
+
+      <div style="margin-top:16px;">
+        <label>Observações</label>
+        <textarea id="fObs" placeholder="Alguma observação sobre a solicitação (opcional)"></textarea>
+      </div>
+
+      <div style="margin-top:18px;display:flex;align-items:center;gap:14px;">
+        <button class="btn btn-primary" id="submitBtn">Enviar solicitação</button>
+        <span id="submitStatus" style="font-size:13px;color:var(--ink-soft);"></span>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>Últimas solicitações</h2>
+      <p class="hint">Histórico de tudo que foi lançado, de todas as obras.</p>
+      <div id="obraHistoryList"></div>
+    </div>
+  </div>
+
+  <!-- ===================== VIEW: ESCRITÓRIO ===================== -->
+  <div id="viewEscritorio" style="display:none;">
+    <div class="panel">
+      <h2>Solicitações recebidas</h2>
+      <div class="filters">
+        <select id="filterObra"><option value="">Todas as obras</option></select>
+        <select id="filterStatus">
+          <option value="">Todos os status</option>
+          <option value="pendente">Pendente</option>
+          <option value="analise">Em análise</option>
+          <option value="oc">OC gerada</option>
+          <option value="concluida">Concluída</option>
+          <option value="cancelada">Cancelada</option>
+        </select>
+        <input type="text" id="filterBusca" placeholder="Buscar item ou solicitante...">
+      </div>
+      <div id="escritorioList"></div>
+    </div>
+  </div>
+
+</main>
+
+<!-- ===================== MODAL: CONFIG GITHUB ===================== -->
+<div class="config-overlay" id="configOverlay">
+  <div class="modal">
+    <h3>Configurar repositório</h3>
+    <p class="hint" style="margin-top:-8px;">Os dados são salvos como <span class="mono">data.json</span> num repositório GitHub, do mesmo jeito que os outros BIs.</p>
+    <div class="field">
+      <label>Owner (usuário/organização)</label>
+      <input type="text" id="cfgOwner" placeholder="leonardoblucena">
+    </div>
+    <div class="field">
+      <label>Repositório</label>
+      <input type="text" id="cfgRepo" placeholder="SOLICITACAO-COMPRA">
+    </div>
+    <div class="field">
+      <label>Branch</label>
+      <input type="text" id="cfgBranch" placeholder="main">
+    </div>
+    <div class="field">
+      <label>Token de acesso (Personal Access Token, com permissão de repo)</label>
+      <input type="text" id="cfgToken" placeholder="ghp_...">
+    </div>
+    <div class="status-msg" id="cfgStatus" style="display:none;"></div>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="cfgCancel">Cancelar</button>
+      <button class="btn btn-primary" id="cfgSave">Salvar e testar</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== MODAL: GERAR OC ===================== -->
+<div class="oc-overlay" id="ocOverlay">
+  <div class="oc-modal">
+    <div class="oc-head no-print">
+      <h3>Ordem de compra — <span id="ocNum"></span></h3>
+      <button class="close-x" id="ocClose">✕</button>
+    </div>
+    <div class="oc-body" id="ocBodyContent">
+      <div class="row" style="margin-top:0;">
+        <div><label>Nº da OC (referência no ERP)</label><input type="text" id="ocNumeroErp" placeholder="Ex: OC-00231"></div>
+        <div><label>Fornecedor</label><input type="text" id="ocFornecedor" placeholder="Nome do fornecedor"></div>
+      </div>
+      <div class="row">
+        <div><label>Condição de pagamento</label><input type="text" id="ocCondPag" placeholder="Ex: 28 dias / à vista"></div>
+        <div><label>Data prevista de entrega</label><input type="date" id="ocDataEntrega"></div>
+      </div>
+      <table>
+        <thead><tr><th>Item</th><th>Un.</th><th>Qtd.</th><th>Prioridade</th></tr></thead>
+        <tbody id="ocItemsBody"></tbody>
+      </table>
+      <div style="margin-top:14px;">
+        <label>Observações da OC</label>
+        <textarea id="ocObs"></textarea>
+      </div>
+    </div>
+    <div class="oc-foot no-print">
+      <button class="btn btn-ghost" id="ocPrint">Imprimir</button>
+      <button class="btn btn-steel" id="ocMarkOnly">Salvar sem gerar OC</button>
+      <button class="btn btn-primary" id="ocSave">Salvar e marcar OC gerada</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  "use strict";
+
+  const UNIDADES = ["UN","KG","L","M","M²","M³","CX","SC","PC","PAR","ROLO","GL","TON","PCT","BALDE","LATA"];
+  const PRIORIDADES = [
+    {v:"baixa",l:"Baixa"},
+    {v:"normal",l:"Normal"},
+    {v:"alta",l:"Alta"},
+    {v:"urgente",l:"Urgente"}
+  ];
+  const STATUS_LABEL = {pendente:"Pendente",analise:"Em análise",oc:"OC gerada",concluida:"Concluída",cancelada:"Cancelada"};
+
+  let DATA = { solicitacoes: [] };
+  let currentSha = null;
+  let currentProfile = localStorage.getItem("sc_profile") || "obra";
+  let ocTargetId = null;
+
+  // ---------------- config ----------------
+  function getConfig(){
+    try{ return JSON.parse(localStorage.getItem("sc_config") || "{}"); }catch(e){ return {}; }
+  }
+  function setConfig(cfg){ localStorage.setItem("sc_config", JSON.stringify(cfg)); }
+  function configComplete(cfg){ return cfg && cfg.owner && cfg.repo && cfg.branch && cfg.token; }
+
+  function refreshRepoLabel(){
+    const cfg = getConfig();
+    document.getElementById("repoLabel").textContent = configComplete(cfg)
+      ? cfg.owner + "/" + cfg.repo
+      : "configure o repositório";
+  }
+
+  // ---------------- github api ----------------
+  async function ghGet(path){
+    const cfg = getConfig();
+    const res = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}?ref=${encodeURIComponent(cfg.branch)}&t=${Date.now()}`, {
+      headers:{ "Authorization":"Bearer "+cfg.token, "Accept":"application/vnd.github+json" }
+    });
+    if(res.status === 404) return { content:null, sha:null };
+    if(!res.ok) throw new Error("Falha ao buscar dados ("+res.status+")");
+    const json = await res.json();
+    const decoded = decodeURIComponent(escape(atob(json.content.replace(/\n/g,""))));
+    return { content: JSON.parse(decoded), sha: json.sha };
+  }
+
+  async function ghPut(path, content, sha, message){
+    const cfg = getConfig();
+    const body = {
+      message: message,
+      content: btoa(unescape(encodeURIComponent(JSON.stringify(content, null, 2)))),
+      branch: cfg.branch
+    };
+    if(sha) body.sha = sha;
+    const res = await fetch(`https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}`, {
+      method:"PUT",
+      headers:{ "Authorization":"Bearer "+cfg.token, "Accept":"application/vnd.github+json", "Content-Type":"application/json" },
+      body: JSON.stringify(body)
+    });
+    if(!res.ok){
+      const err = await res.json().catch(()=>({}));
+      throw new Error("Falha ao salvar ("+res.status+") "+(err.message||""));
+    }
+    return res.json();
+  }
+
+  async function loadData(){
+    const cfg = getConfig();
+    if(!configComplete(cfg)) return;
+    try{
+      const { content, sha } = await ghGet("data.json");
+      DATA = content || { solicitacoes: [] };
+      currentSha = sha;
+      renderAll();
+    }catch(e){
+      showToast("Erro ao carregar dados: " + e.message);
+    }
+  }
+
+  async function saveData(message){
+    // always fetch a fresh sha right before saving, to avoid 409 conflicts
+    const fresh = await ghGet("data.json");
+    currentSha = fresh.sha;
+    await ghPut("data.json", DATA, currentSha, message || "Atualiza solicitações de compra");
+  }
+
+  // ---------------- helpers ----------------
+  function showToast(msg){
+    const t = document.getElementById("toast");
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(()=>t.classList.remove("show"), 3200);
+  }
+
+  function nextNumero(){
+    const year = new Date().getFullYear();
+    const count = DATA.solicitacoes.filter(s => s.numero && s.numero.includes("-"+year+"-")).length + 1;
+    return "SC-"+year+"-"+String(count).padStart(3,"0");
+  }
+
+  function fmtDate(iso){
+    const d = new Date(iso);
+    return d.toLocaleDateString("pt-BR");
+  }
+
+  // ---------------- item rows (form obra) ----------------
+  function addItemRow(desc, un, qtd, prio){
+    const tbody = document.getElementById("itemsBody");
+    const tr = document.createElement("tr");
+    tr.innerHTML = `
+      <td><input type="text" class="it-desc" placeholder="Ex: Parafuso 3/8 x 2''" value="${desc||''}"></td>
+      <td><select class="it-un">${UNIDADES.map(u=>`<option ${u===un?'selected':''}>${u}</option>`).join('')}</select></td>
+      <td><input type="number" min="0" step="0.01" class="it-qtd" value="${qtd||1}"></td>
+      <td><select class="it-prio">${PRIORIDADES.map(p=>`<option value="${p.v}" ${p.v===prio?'selected':''}>${p.l}</option>`).join('')}</select></td>
+      <td><button type="button" class="rm-item" title="Remover item">✕</button></td>
+    `;
+    tr.querySelector(".rm-item").addEventListener("click", ()=>{
+      if(document.getElementById("itemsBody").children.length > 1) tr.remove();
+    });
+    tbody.appendChild(tr);
+  }
+
+  function readItemRows(){
+    const rows = [...document.querySelectorAll("#itemsBody tr")];
+    return rows.map(tr => ({
+      descricao: tr.querySelector(".it-desc").value.trim(),
+      unidade: tr.querySelector(".it-un").value,
+      quantidade: parseFloat(tr.querySelector(".it-qtd").value) || 0,
+      prioridade: tr.querySelector(".it-prio").value
+    })).filter(it => it.descricao);
+  }
+
+  function resetItemRows(){
+    document.getElementById("itemsBody").innerHTML = "";
+    addItemRow();
+  }
+
+  // ---------------- submit new solicitação ----------------
+  async function submitSolicitacao(){
+    const cfg = getConfig();
+    if(!configComplete(cfg)){
+      openConfig();
+      return;
+    }
+    const obra = document.getElementById("fObra").value.trim();
+    const solicitante = document.getElementById("fSolicitante").value.trim();
+    const obs = document.getElementById("fObs").value.trim();
+    const itens = readItemRows();
+    const statusEl = document.getElementById("submitStatus");
+
+    if(!obra || !solicitante){
+      statusEl.textContent = "Preencha obra e solicitante.";
+      statusEl.style.color = "var(--danger)";
+      return;
+    }
+    if(itens.length === 0){
+      statusEl.textContent = "Adicione pelo menos um item.";
+      statusEl.style.color = "var(--danger)";
+      return;
+    }
+
+    const btn = document.getElementById("submitBtn");
+    btn.disabled = true;
+    statusEl.textContent = "Enviando...";
+    statusEl.style.color = "var(--ink-soft)";
+
+    const novo = {
+      id: "sc_" + Date.now() + "_" + Math.random().toString(36).slice(2,7),
+      numero: nextNumero(),
+      obra, solicitante, itens, observacoes: obs,
+      status: "pendente",
+      dataCriacao: new Date().toISOString(),
+      oc: null
+    };
+
+    try{
+      DATA.solicitacoes.unshift(novo);
+      await saveData("Nova solicitação " + novo.numero + " (" + obra + ")");
+      localStorage.setItem("sc_last_obra", obra);
+      localStorage.setItem("sc_last_solicitante", solicitante);
+      document.getElementById("fObs").value = "";
+      resetItemRows();
+      statusEl.textContent = "Solicitação " + novo.numero + " enviada.";
+      statusEl.style.color = "var(--success)";
+      renderAll();
+    }catch(e){
+      DATA.solicitacoes.shift();
+      statusEl.textContent = "Erro ao enviar: " + e.message;
+      statusEl.style.color = "var(--danger)";
+    }finally{
+      btn.disabled = false;
+    }
+  }
+
+  // ---------------- render: obra history ----------------
+  function slipHtml(s, opts){
+    opts = opts || {};
+    const itemsHtml = s.itens.map(it => `
+      <li>
+        <span>${it.descricao} <span class="prio prio-${it.prioridade}">${PRIORIDADES.find(p=>p.v===it.prioridade)?.l||it.prioridade}</span></span>
+        <span class="qtd">${it.quantidade} ${it.unidade}</span>
+      </li>`).join("");
+
+    const statusClass = {pendente:"pendente",analise:"analise",oc:"oc",concluida:"concluida",cancelada:"cancelada"}[s.status] || "pendente";
+
+    let actions = "";
+    if(opts.escritorio){
+      actions = `
+        <select class="statusSelect" data-id="${s.id}" style="width:auto;">
+          <option value="pendente" ${s.status==='pendente'?'selected':''}>Pendente</option>
+          <option value="analise" ${s.status==='analise'?'selected':''}>Em análise</option>
+          <option value="oc" ${s.status==='oc'?'selected':''}>OC gerada</option>
+          <option value="concluida" ${s.status==='concluida'?'selected':''}>Concluída</option>
+          <option value="cancelada" ${s.status==='cancelada'?'selected':''}>Cancelada</option>
+        </select>
+        <button class="btn btn-steel gerarOcBtn" data-id="${s.id}" style="padding:8px 16px;font-size:13px;">Gerar OC</button>
+      `;
+    }
+
+    const ocInfo = s.oc ? `<div class="obs">OC: <strong>${s.oc.numeroErp||'—'}</strong> · Fornecedor: ${s.oc.fornecedor||'—'}</div>` : "";
+
+    return `
+      <div class="slip">
+        <div class="stub">
+          <div class="num">${s.numero}</div>
+          <div class="date">${fmtDate(s.dataCriacao)}</div>
+          <div class="perf"></div>
+        </div>
+        <div class="body">
+          <div class="top-row">
+            <div>
+              <p class="obra-name">${s.obra}</p>
+              <div class="meta">Solicitante: ${s.solicitante}</div>
+            </div>
+            <span class="stamp ${statusClass}">${STATUS_LABEL[s.status]||s.status}</span>
+          </div>
+          <ul class="items-list">${itemsHtml}</ul>
+          ${s.observacoes ? `<div class="obs">"${s.observacoes}"</div>` : ""}
+          ${ocInfo}
+          <div class="actions">${actions}</div>
+        </div>
+      </div>`;
+  }
+
+  function renderObraHistory(){
+    const el = document.getElementById("obraHistoryList");
+    if(DATA.solicitacoes.length === 0){
+      el.innerHTML = `<div class="empty"><div class="big">Nenhuma solicitação lançada ainda.</div></div>`;
+      return;
+    }
+    el.innerHTML = DATA.solicitacoes.slice(0,20).map(s => slipHtml(s, {escritorio:false})).join("");
+  }
+
+  // ---------------- render: escritório list ----------------
+  function populateObraFilter(){
+    const sel = document.getElementById("filterObra");
+    const obras = [...new Set(DATA.solicitacoes.map(s=>s.obra))].sort();
+    const current = sel.value;
+    sel.innerHTML = `<option value="">Todas as obras</option>` + obras.map(o=>`<option value="${o}">${o}</option>`).join("");
+    sel.value = current;
+  }
+
+  function renderEscritorioList(){
+    populateObraFilter();
+    const fObra = document.getElementById("filterObra").value;
+    const fStatus = document.getElementById("filterStatus").value;
+    const fBusca = document.getElementById("filterBusca").value.trim().toLowerCase();
+
+    let list = DATA.solicitacoes.slice();
+    if(fObra) list = list.filter(s => s.obra === fObra);
+    if(fStatus) list = list.filter(s => s.status === fStatus);
+    if(fBusca){
+      list = list.filter(s =>
+        s.solicitante.toLowerCase().includes(fBusca) ||
+        s.itens.some(it => it.descricao.toLowerCase().includes(fBusca))
+      );
+    }
+
+    const el = document.getElementById("escritorioList");
+    if(list.length === 0){
+      el.innerHTML = `<div class="empty"><div class="big">Nenhuma solicitação encontrada com esses filtros.</div></div>`;
+      return;
+    }
+    el.innerHTML = list.map(s => slipHtml(s, {escritorio:true})).join("");
+
+    el.querySelectorAll(".statusSelect").forEach(sel=>{
+      sel.addEventListener("change", async (e)=>{
+        const id = e.target.dataset.id;
+        const novoStatus = e.target.value;
+        const item = DATA.solicitacoes.find(s=>s.id===id);
+        if(!item) return;
+        const anterior = item.status;
+        item.status = novoStatus;
+        try{
+          await saveData("Atualiza status de " + item.numero + " para " + novoStatus);
+          showToast(item.numero + " atualizado para " + (STATUS_LABEL[novoStatus]||novoStatus));
+          renderAll();
+        }catch(err){
+          item.status = anterior;
+          showToast("Erro ao salvar status: " + err.message);
+          renderAll();
+        }
+      });
+    });
+
+    el.querySelectorAll(".gerarOcBtn").forEach(btn=>{
+      btn.addEventListener("click", ()=> openOcModal(btn.dataset.id));
+    });
+  }
+
+  // ---------------- OC modal ----------------
+  function openOcModal(id){
+    const s = DATA.solicitacoes.find(x=>x.id===id);
+    if(!s) return;
+    ocTargetId = id;
+    document.getElementById("ocNum").textContent = s.numero + " — " + s.obra;
+    document.getElementById("ocNumeroErp").value = s.oc?.numeroErp || "";
+    document.getElementById("ocFornecedor").value = s.oc?.fornecedor || "";
+    document.getElementById("ocCondPag").value = s.oc?.condPag || "";
+    document.getElementById("ocDataEntrega").value = s.oc?.dataEntrega || "";
+    document.getElementById("ocObs").value = s.oc?.obs || s.observacoes || "";
+    document.getElementById("ocItemsBody").innerHTML = s.itens.map(it => `
+      <tr><td>${it.descricao}</td><td>${it.unidade}</td><td>${it.quantidade}</td>
+      <td><span class="prio prio-${it.prioridade}">${PRIORIDADES.find(p=>p.v===it.prioridade)?.l||it.prioridade}</span></td></tr>
+    `).join("");
+    document.getElementById("ocOverlay").classList.add("show");
+  }
+
+  function closeOcModal(){
+    document.getElementById("ocOverlay").classList.remove("show");
+    ocTargetId = null;
+  }
+
+  function readOcForm(){
+    return {
+      numeroErp: document.getElementById("ocNumeroErp").value.trim(),
+      fornecedor: document.getElementById("ocFornecedor").value.trim(),
+      condPag: document.getElementById("ocCondPag").value.trim(),
+      dataEntrega: document.getElementById("ocDataEntrega").value,
+      obs: document.getElementById("ocObs").value.trim()
+    };
+  }
+
+  async function saveOc(markAsGenerated){
+    const s = DATA.solicitacoes.find(x=>x.id===ocTargetId);
+    if(!s) return;
+    const prevStatus = s.status;
+    const prevOc = s.oc;
+    s.oc = readOcForm();
+    if(markAsGenerated) s.status = "oc";
+    try{
+      await saveData("Registra OC para " + s.numero);
+      showToast(markAsGenerated ? s.numero + " marcada como OC gerada." : "Dados da OC salvos.");
+      closeOcModal();
+      renderAll();
+    }catch(e){
+      s.status = prevStatus;
+      s.oc = prevOc;
+      showToast("Erro ao salvar OC: " + e.message);
+    }
+  }
+
+  // ---------------- config modal ----------------
+  function openConfig(){
+    const cfg = getConfig();
+    document.getElementById("cfgOwner").value = cfg.owner || "";
+    document.getElementById("cfgRepo").value = cfg.repo || "SOLICITACAO-COMPRA";
+    document.getElementById("cfgBranch").value = cfg.branch || "main";
+    document.getElementById("cfgToken").value = cfg.token || "";
+    document.getElementById("cfgStatus").style.display = "none";
+    document.getElementById("configOverlay").classList.add("show");
+  }
+  function closeConfig(){ document.getElementById("configOverlay").classList.remove("show"); }
+
+  async function saveConfigAndTest(){
+    const cfg = {
+      owner: document.getElementById("cfgOwner").value.trim(),
+      repo: document.getElementById("cfgRepo").value.trim(),
+      branch: document.getElementById("cfgBranch").value.trim() || "main",
+      token: document.getElementById("cfgToken").value.trim()
+    };
+    const statusEl = document.getElementById("cfgStatus");
+    statusEl.style.display = "block";
+    statusEl.className = "status-msg";
+    statusEl.textContent = "Testando conexão...";
+
+    if(!configComplete(cfg)){
+      statusEl.className = "status-msg err";
+      statusEl.textContent = "Preencha todos os campos.";
+      return;
+    }
+
+    setConfig(cfg);
+    try{
+      const { content, sha } = await ghGet("data.json");
+      if(content === null){
+        // data.json ainda não existe: cria vazio
+        await ghPut("data.json", { solicitacoes: [] }, null, "Cria data.json inicial");
+        DATA = { solicitacoes: [] };
+        currentSha = null;
+      }else{
+        DATA = content;
+        currentSha = sha;
+      }
+      statusEl.className = "status-msg ok";
+      statusEl.textContent = "Conectado com sucesso a " + cfg.owner + "/" + cfg.repo + ".";
+      refreshRepoLabel();
+      renderAll();
+      setTimeout(closeConfig, 900);
+    }catch(e){
+      statusEl.className = "status-msg err";
+      statusEl.textContent = "Falha na conexão: " + e.message;
+    }
+  }
+
+  // ---------------- profile switch ----------------
+  function setProfile(p){
+    currentProfile = p;
+    localStorage.setItem("sc_profile", p);
+    document.getElementById("viewObra").style.display = p === "obra" ? "block" : "none";
+    document.getElementById("viewEscritorio").style.display = p === "escritorio" ? "block" : "none";
+    document.getElementById("btnObra").classList.toggle("active", p === "obra");
+    document.getElementById("btnEscritorio").classList.toggle("active", p === "escritorio");
+  }
+
+  // ---------------- render all ----------------
+  function renderAll(){
+    renderObraHistory();
+    renderEscritorioList();
+  }
+
+  // ---------------- wire up ----------------
+  document.getElementById("btnObra").addEventListener("click", ()=>setProfile("obra"));
+  document.getElementById("btnEscritorio").addEventListener("click", ()=>setProfile("escritorio"));
+  document.getElementById("btnConfig").addEventListener("click", openConfig);
+  document.getElementById("cfgCancel").addEventListener("click", closeConfig);
+  document.getElementById("cfgSave").addEventListener("click", saveConfigAndTest);
+  document.getElementById("addItemBtn").addEventListener("click", ()=>addItemRow());
+  document.getElementById("submitBtn").addEventListener("click", submitSolicitacao);
+  document.getElementById("filterObra").addEventListener("change", renderEscritorioList);
+  document.getElementById("filterStatus").addEventListener("change", renderEscritorioList);
+  document.getElementById("filterBusca").addEventListener("input", renderEscritorioList);
+  document.getElementById("ocClose").addEventListener("click", closeOcModal);
+  document.getElementById("ocSave").addEventListener("click", ()=>saveOc(true));
+  document.getElementById("ocMarkOnly").addEventListener("click", ()=>saveOc(false));
+  document.getElementById("ocPrint").addEventListener("click", ()=>window.print());
+
+  // pre-fill obra/solicitante from last session
+  document.getElementById("fObra").value = localStorage.getItem("sc_last_obra") || "";
+  document.getElementById("fSolicitante").value = localStorage.getItem("sc_last_solicitante") || "";
+  resetItemRows();
+  setProfile(currentProfile);
+  refreshRepoLabel();
+
+  if(configComplete(getConfig())){
+    loadData();
+  }else{
+    setTimeout(openConfig, 400);
+  }
+})();
+</script>
+</body>
+</html>
