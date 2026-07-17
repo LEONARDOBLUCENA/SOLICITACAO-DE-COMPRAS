@@ -501,7 +501,7 @@
     document.getElementById("fObs").value = "";
     document.getElementById("fObra").value = "AVENIDA";
     document.getElementById("fData").value = todayStr();
-    document.getElementById("fSolicitante").value = localStorage.getItem("sc_last_solicitante") || "";
+    document.getElementById("fSolicitante").value = "";
     resetItemRows();
   }
 
@@ -575,7 +575,6 @@
       s.dataCriacao = dateInputToISO(document.getElementById("fData").value);
       try{
         await saveData("Edita solicitação " + s.numero);
-        localStorage.setItem("sc_last_solicitante", solicitante);
         statusEl.textContent = "Solicitação " + s.numero + " atualizada.";
         statusEl.style.color = "var(--success)";
         exitEditMode();
@@ -603,10 +602,10 @@
     try{
       DATA.solicitacoes.unshift(novo);
       await saveData("Nova solicitação " + novo.numero + " (" + obra + ")");
-      localStorage.setItem("sc_last_solicitante", solicitante);
       document.getElementById("fObs").value = "";
       document.getElementById("fObra").value = "AVENIDA";
       document.getElementById("fData").value = todayStr();
+      document.getElementById("fSolicitante").value = "";
       resetItemRows();
       statusEl.textContent = "Solicitação " + novo.numero + " enviada.";
       statusEl.style.color = "var(--success)";
@@ -986,7 +985,7 @@
 
   // pre-fill fields: Obra sempre padrão AVENIDA, Data sempre hoje, Solicitante lembra do último uso
   document.getElementById("fObra").value = "AVENIDA";
-  document.getElementById("fSolicitante").value = localStorage.getItem("sc_last_solicitante") || "";
+  document.getElementById("fSolicitante").value = "";
   document.getElementById("fData").value = todayStr();
   resetItemRows();
   setProfile((currentProfile === "escritorio" && isEscritorioUnlocked()) ? "escritorio" : "obra");
