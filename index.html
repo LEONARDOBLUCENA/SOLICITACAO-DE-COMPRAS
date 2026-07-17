@@ -50,12 +50,31 @@
   textarea{resize:vertical;min-height:56px;}
   .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
   .row-3{grid-template-columns:1fr 1fr 160px;}
-  @media(max-width:600px){.row{grid-template-columns:1fr;}}
+  @media(max-width:600px){
+    .row{grid-template-columns:1fr;}
+    input[type=text],input[type=number],input[type=date],select,textarea{font-size:16px;padding:11px 10px;}
+    .panel{padding:16px;}
+  }
 
   .items-table{width:100%;border-collapse:collapse;margin:10px 0 6px;}
   .items-table th{text-align:left;font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);padding:0 8px 6px;border-bottom:1px solid var(--line);}
   .items-table td{padding:5px 6px;vertical-align:top;}
+  .items-table td::before{content:none;}
   .items-table input,.items-table select{padding:7px 8px;font-size:13px;}
+  .rm-text{display:none;}
+
+  @media(max-width:700px){
+    .items-table thead{display:none;}
+    .items-table, .items-table tbody, .items-table tr, .items-table td{display:block;width:100%;}
+    .items-table{border:none;}
+    .items-table tr{border:1px solid var(--line);border-radius:2px;margin-bottom:14px;padding:12px 12px 6px;background:#fff;position:relative;}
+    .items-table td{padding:0 0 10px;}
+    .items-table td[data-label]::before{content:attr(data-label);display:block;font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:4px;}
+    .items-table td.rm-cell{padding-top:4px;border-top:1px solid var(--line);margin-top:2px;}
+    .items-table .rm-item{width:100%;background:none;border:1px solid var(--danger);color:var(--danger);padding:9px;font-size:13px;font-weight:600;border-radius:2px;}
+    .rm-text{display:inline;}
+    .items-table input,.items-table select{padding:11px 10px;font-size:16px;}
+  }
   .rm-item{background:none;border:none;color:var(--danger);cursor:pointer;font-size:18px;line-height:1;padding:4px 8px;}
   .add-item{background:none;border:1px dashed var(--steel);color:var(--steel);padding:8px 14px;font-size:13px;font-weight:600;cursor:pointer;margin-top:4px;}
   .add-item:hover{background:rgba(61,90,115,.07);}
@@ -454,15 +473,15 @@
     const tbody = document.getElementById("itemsBody");
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td><input type="text" class="it-desc" placeholder="Ex: Parafuso 3/8 x 2'' ou Manutenção elétrica" value="${desc||''}"></td>
-      <td><select class="it-tipo">
+      <td data-label="Descrição"><input type="text" class="it-desc" placeholder="Ex: Parafuso 3/8 x 2'' ou Manutenção elétrica" value="${desc||''}"></td>
+      <td data-label="Tipo"><select class="it-tipo">
         <option value="material" ${tipo==='material'?'selected':''}>Material</option>
         <option value="servico" ${tipo==='servico'?'selected':''}>Serviço</option>
       </select></td>
-      <td><select class="it-un">${UNIDADES.map(u=>`<option ${u===un?'selected':''}>${u}</option>`).join('')}</select></td>
-      <td><input type="number" min="0" step="0.01" class="it-qtd" value="${qtd||1}"></td>
-      <td><select class="it-prio">${PRIORIDADES.map(p=>`<option value="${p.v}" ${p.v===prio?'selected':''}>${p.l}</option>`).join('')}</select></td>
-      <td><button type="button" class="rm-item" title="Remover item">✕</button></td>
+      <td data-label="Unidade"><select class="it-un">${UNIDADES.map(u=>`<option ${u===un?'selected':''}>${u}</option>`).join('')}</select></td>
+      <td data-label="Quantidade"><input type="number" min="0" step="0.01" class="it-qtd" value="${qtd||1}"></td>
+      <td data-label="Prioridade"><select class="it-prio">${PRIORIDADES.map(p=>`<option value="${p.v}" ${p.v===prio?'selected':''}>${p.l}</option>`).join('')}</select></td>
+      <td class="rm-cell"><button type="button" class="rm-item" title="Remover item">✕<span class="rm-text"> Remover item</span></button></td>
     `;
     tr.querySelector(".rm-item").addEventListener("click", ()=>{
       if(document.getElementById("itemsBody").children.length > 1) tr.remove();
