@@ -49,6 +49,7 @@
   input:focus,select:focus,textarea:focus{outline:2px solid var(--steel);outline-offset:1px;}
   textarea{resize:vertical;min-height:56px;}
   .row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px;}
+  .row-3{grid-template-columns:1fr 1fr 160px;}
   @media(max-width:600px){.row{grid-template-columns:1fr;}}
 
   .items-table{width:100%;border-collapse:collapse;margin:10px 0 6px;}
@@ -172,7 +173,7 @@
       <h2>Nova solicitação</h2>
       <p class="hint">Preencha os itens necessários. O escritório vai visualizar e providenciar a ordem de compra.</p>
 
-      <div class="row">
+      <div class="row row-3">
         <div>
           <label>Obra / Centro de custo</label>
           <input type="text" id="fObra" placeholder="Ex: SPE Montagnes">
@@ -180,6 +181,10 @@
         <div>
           <label>Solicitante</label>
           <input type="text" id="fSolicitante" placeholder="Seu nome">
+        </div>
+        <div>
+          <label>Data da solicitação</label>
+          <input type="date" id="fData">
         </div>
       </div>
 
@@ -451,6 +456,17 @@
     })).filter(it => it.descricao);
   }
 
+  function todayStr(){
+    const d = new Date();
+    const y = d.getFullYear(), m = String(d.getMonth()+1).padStart(2,"0"), day = String(d.getDate()).padStart(2,"0");
+    return y+"-"+m+"-"+day;
+  }
+  function dateInputToISO(dateStr){
+    if(!dateStr) dateStr = todayStr();
+    const [y,m,d] = dateStr.split("-").map(Number);
+    return new Date(y, m-1, d, 12, 0, 0).toISOString();
+  }
+
   function resetItemRows(){
     document.getElementById("itemsBody").innerHTML = "";
     addItemRow();
@@ -490,7 +506,7 @@
       numero: nextNumero(),
       obra, solicitante, itens, observacoes: obs,
       status: "pendente",
-      dataCriacao: new Date().toISOString(),
+      dataCriacao: dateInputToISO(document.getElementById("fData").value),
       previsaoEntrega: null,
       oc: null
     };
@@ -498,9 +514,10 @@
     try{
       DATA.solicitacoes.unshift(novo);
       await saveData("Nova solicitação " + novo.numero + " (" + obra + ")");
-      localStorage.setItem("sc_last_obra", obra);
       localStorage.setItem("sc_last_solicitante", solicitante);
       document.getElementById("fObs").value = "";
+      document.getElementById("fObra").value = "AVENIDA";
+      document.getElementById("fData").value = todayStr();
       resetItemRows();
       statusEl.textContent = "Solicitação " + novo.numero + " enviada.";
       statusEl.style.color = "var(--success)";
@@ -540,6 +557,7 @@
           <input type="date" class="previsaoInput" data-id="${s.id}" value="${s.previsaoEntrega||''}">
         </div>
         <button class="btn btn-steel gerarOcBtn" data-id="${s.id}" style="padding:8px 16px;font-size:13px;">Gerar OC</button>
+        ${(s.status !== 'cancelada' && s.status !== 'concluida') ? `<button class="btn cancelarBtn" data-id="${s.id}" data-numero="${s.numero}" style="padding:8px 16px;font-size:13px;background:none;border:1px solid var(--danger);color:var(--danger);">Cancelar solicitação</button>` : ''}
       `;
     }
 
@@ -654,6 +672,27 @@
         }catch(err){
           item.previsaoEntrega = anterior;
           showToast("Erro ao salvar previsão: " + err.message);
+          renderAll();
+        }
+      });
+    });
+
+    el.querySelectorAll(".cancelarBtn").forEach(btn=>{
+      btn.addEventListener("click", async ()=>{
+        const id = btn.dataset.id;
+        const numero = btn.dataset.numero;
+        const item = DATA.solicitacoes.find(s=>s.id===id);
+        if(!item) return;
+        if(!window.confirm("Cancelar a solicitação " + numero + "? Essa ação marca como Cancelada.")) return;
+        const anterior = item.status;
+        item.status = "cancelada";
+        try{
+          await saveData("Cancela solicitação " + numero);
+          showToast(numero + " cancelada.");
+          renderAll();
+        }catch(err){
+          item.status = anterior;
+          showToast("Erro ao cancelar: " + err.message);
           renderAll();
         }
       });
@@ -800,9 +839,10 @@
   document.getElementById("ocMarkOnly").addEventListener("click", ()=>saveOc(false));
   document.getElementById("ocPrint").addEventListener("click", ()=>window.print());
 
-  // pre-fill obra/solicitante from last session
-  document.getElementById("fObra").value = localStorage.getItem("sc_last_obra") || "";
+  // pre-fill fields: Obra sempre padrão AVENIDA, Data sempre hoje, Solicitante lembra do último uso
+  document.getElementById("fObra").value = "AVENIDA";
   document.getElementById("fSolicitante").value = localStorage.getItem("sc_last_solicitante") || "";
+  document.getElementById("fData").value = todayStr();
   resetItemRows();
   setProfile(currentProfile);
   refreshRepoLabel();
