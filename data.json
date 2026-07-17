@@ -1,3 +1,22 @@
 {
-  "solicitacoes": []
+  "solicitacoes": [
+    {
+      "id": "sc_1784290270797_yi2hm",
+      "numero": "SC-2026-001",
+      "obra": "AVENIDA",
+      "solicitante": "LEONARDO",
+      "itens": [
+        {
+          "descricao": "LONA",
+          "unidade": "ROLO",
+          "quantidade": 1,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "4X25",
+      "status": "pendente",
+      "dataCriacao": "2026-07-17T12:11:10.797Z",
+      "oc": null
+    }
+  ]
 }
