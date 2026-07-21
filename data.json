@@ -1,6 +1,26 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1784641167985_9luaf",
+      "numero": "SC-2026-003",
+      "obra": "AVENIDA",
+      "solicitante": "Luciano",
+      "itens": [
+        {
+          "descricao": "cones grandes",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "normal"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-21T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784633709112_l5e29",
       "numero": "SC-2026-002",
       "obra": "AVENIDA",
