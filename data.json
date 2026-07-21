@@ -1,6 +1,26 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1784633709112_l5e29",
+      "numero": "SC-2026-002",
+      "obra": "AVENIDA",
+      "solicitante": "Luciano",
+      "itens": [
+        {
+          "descricao": "Furadeira (aluguel)",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-21T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784290270797_yi2hm",
       "numero": "SC-2026-001",
       "obra": "AVENIDA",
