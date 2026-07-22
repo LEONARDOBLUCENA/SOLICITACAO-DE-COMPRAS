@@ -638,6 +638,7 @@
       status: "pendente",
       dataCriacao: dateInputToISO(document.getElementById("fData").value),
       previsaoEntrega: null,
+      fornecedor: null,
       oc: null
     };
 
@@ -686,6 +687,10 @@
           <label>Previsão entrega</label>
           <input type="date" class="previsaoInput" data-id="${s.id}" value="${s.previsaoEntrega||''}">
         </div>
+        <div class="prev-row">
+          <label>Fornecedor</label>
+          <input type="text" class="fornecedorInput" data-id="${s.id}" value="${s.fornecedor||''}" placeholder="Nome do fornecedor" style="width:160px;">
+        </div>
         <button class="btn btn-steel gerarOcBtn" data-id="${s.id}" style="padding:8px 16px;font-size:13px;">Gerar OC</button>
         ${(s.status !== 'cancelada' && s.status !== 'concluida') ? `<button class="btn cancelarBtn" data-id="${s.id}" data-numero="${s.numero}" style="padding:8px 16px;font-size:13px;background:none;border:1px solid var(--danger);color:var(--danger);">Cancelar solicitação</button>` : ''}
       `;
@@ -697,6 +702,9 @@
     const prevBadge = s.previsaoEntrega
       ? `<span class="prev-badge set">🚚 Previsão: ${fmtDate(s.previsaoEntrega)}</span>`
       : (opts.escritorio ? "" : `<span class="prev-badge">Previsão ainda não informada</span>`);
+    const fornecedorBadge = s.fornecedor
+      ? `<span class="prev-badge set">🏷️ Fornecedor: ${s.fornecedor}</span>`
+      : (opts.escritorio ? "" : `<span class="prev-badge">Fornecedor ainda não informado</span>`);
 
     return `
       <div class="slip">
@@ -714,6 +722,7 @@
             <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
               <span class="stamp ${statusClass}">${STATUS_LABEL[s.status]||s.status}</span>
               ${prevBadge}
+              ${fornecedorBadge}
             </div>
           </div>
           <ul class="items-list">${itemsHtml}</ul>
@@ -847,6 +856,26 @@
       });
     });
 
+    el.querySelectorAll(".fornecedorInput").forEach(inp=>{
+      inp.addEventListener("change", async (e)=>{
+        const id = e.target.dataset.id;
+        const item = DATA.solicitacoes.find(s=>s.id===id);
+        if(!item) return;
+        const anterior = item.fornecedor;
+        item.fornecedor = e.target.value.trim();
+        if(item.oc) item.oc.fornecedor = item.fornecedor;
+        try{
+          await saveData("Define fornecedor para " + item.numero);
+          showToast(item.numero + ": fornecedor salvo.");
+          renderAll();
+        }catch(err){
+          item.fornecedor = anterior;
+          showToast("Erro ao salvar fornecedor: " + err.message);
+          renderAll();
+        }
+      });
+    });
+
     el.querySelectorAll(".cancelarBtn").forEach(btn=>{
       btn.addEventListener("click", async ()=>{
         const id = btn.dataset.id;
@@ -876,7 +905,7 @@
     ocTargetId = id;
     document.getElementById("ocNum").textContent = s.numero + " — " + s.obra;
     document.getElementById("ocNumeroErp").value = s.oc?.numeroErp || "";
-    document.getElementById("ocFornecedor").value = s.oc?.fornecedor || "";
+    document.getElementById("ocFornecedor").value = s.oc?.fornecedor || s.fornecedor || "";
     document.getElementById("ocCondPag").value = s.oc?.condPag || "";
     document.getElementById("ocDataEntrega").value = s.oc?.dataEntrega || s.previsaoEntrega || "";
     document.getElementById("ocObs").value = s.oc?.obs || s.observacoes || "";
@@ -908,8 +937,10 @@
     const prevStatus = s.status;
     const prevOc = s.oc;
     const prevPrevisao = s.previsaoEntrega;
+    const prevFornecedor = s.fornecedor;
     s.oc = readOcForm();
     if(s.oc.dataEntrega) s.previsaoEntrega = s.oc.dataEntrega;
+    if(s.oc.fornecedor) s.fornecedor = s.oc.fornecedor;
     if(markAsGenerated) s.status = "oc";
     try{
       await saveData("Registra OC para " + s.numero);
@@ -920,6 +951,7 @@
       s.status = prevStatus;
       s.oc = prevOc;
       s.previsaoEntrega = prevPrevisao;
+      s.fornecedor = prevFornecedor;
       showToast("Erro ao salvar OC: " + e.message);
     }
   }
