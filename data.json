@@ -1,6 +1,26 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1784723736913_npf26",
+      "numero": "SC-2026-004",
+      "obra": "AVENIDA",
+      "solicitante": "Luciano",
+      "itens": [
+        {
+          "descricao": "Discos corte ferro",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-22T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784641167985_9luaf",
       "numero": "SC-2026-003",
       "obra": "AVENIDA",
