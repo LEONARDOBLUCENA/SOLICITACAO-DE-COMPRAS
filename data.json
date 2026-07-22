@@ -1,6 +1,26 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1784725818094_hv27m",
+      "numero": "SC-2026-005",
+      "obra": "AVENIDA",
+      "solicitante": "Luciano",
+      "itens": [
+        {
+          "descricao": "Poli corte",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-22T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784723736913_npf26",
       "numero": "SC-2026-004",
       "obra": "AVENIDA",
