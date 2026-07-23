@@ -1,6 +1,76 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1784814159907_wglqu",
+      "numero": "SC-2026-006",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Lã",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 8,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Pincel 3 polegadas",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Rolo cabelo de anjo",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Lixa para girafinha (telinha) 220",
+          "tipo": "material",
+          "unidade": "CX",
+          "quantidade": 2,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Lixa 220 para massa",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 3,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Garfo sem rosca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "ACIII",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 1,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Lixa 180 para ferro",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 1,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "Prazo de entrega 27/07/26.",
+      "status": "pendente",
+      "dataCriacao": "2026-07-23T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784725818094_hv27m",
       "numero": "SC-2026-005",
       "obra": "AVENIDA",
