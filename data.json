@@ -1,6 +1,69 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1785243639248_g5nry",
+      "numero": "SC-2026-007",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tijolo maciço",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 500,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Areia média",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "ACIII",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 10,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Alvenarit",
+          "tipo": "material",
+          "unidade": "L",
+          "quantidade": 1,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Barra de ferro 8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Barra de ferro 4.2",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Broca com engate rápido nº 8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-28T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1784814159907_wglqu",
       "numero": "SC-2026-006",
       "obra": "AVENIDA",
