@@ -19,6 +19,48 @@
           "unidade": "UN",
           "quantidade": 20,
           "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho 90x32",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho 45x32",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Adesivo plástico cola PVC",
+          "tipo": "material",
+          "unidade": "L",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cola pincel pequena",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lixa 80",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Isolador para cano 32",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
         }
       ],
       "observacoes": "",
