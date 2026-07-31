@@ -508,7 +508,8 @@
       "status": "concluida",
       "dataCriacao": "2026-07-22T15:00:00.000Z",
       "previsaoEntrega": null,
-      "oc": null
+      "oc": null,
+      "fornecedor": "super"
     },
     {
       "id": "sc_1784723736913_npf26",
