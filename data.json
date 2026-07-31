@@ -1,6 +1,293 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1785456326715_9wp34",
+      "numero": "SC-2026-009",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Pezzi suporte 4x2",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pezzi modular br tomada 2P + T 20A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pezzi modular BR placa clássica 4x2 3 mod",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pezzi modular BR módulo cego",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Benini caixa de passagem sobr 20x20x8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 1000,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 1000,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Duto corrugado 2 pol cinza",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Soprano IDR tetra 63A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka tri 50A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka trif 63A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Dps 45ka",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 16,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Balde / caixa aterramento medio",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Haste terra 5/8 x 12mm 1,20mt",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Conector haste terra",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Inpol preto abraçadeira 3/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka mono 32A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 48,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka mono 20A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 48,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka mono 16A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 60,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka mono 25A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 12,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3ka mono 40A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barramento pente trifásico",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 54,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 1,5mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Terminal genérico conexão pino longo 25mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 300,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm cinza",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 2,5mm amarelo",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 6,0mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 6,0mm verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lubrificante puxa cabo 500ml 3m",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 10,0mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 10,0mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 10,0mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flexível 10,0mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Abraçadeira nylon 20cm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1500,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cd metal 34din 150A branco embutir",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Terminal genérico conexão pino curto 25mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-07-30T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1785327820940_msleg",
       "numero": "SC-2026-008",
       "obra": "AVENIDA",
