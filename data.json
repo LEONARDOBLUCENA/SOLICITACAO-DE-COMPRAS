@@ -571,7 +571,8 @@
       "status": "concluida",
       "dataCriacao": "2026-07-21T15:00:00.000Z",
       "previsaoEntrega": null,
-      "oc": null
+      "oc": null,
+      "fornecedor": "supe"
     },
     {
       "id": "sc_1784290270797_yi2hm",
