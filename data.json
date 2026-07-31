@@ -550,7 +550,8 @@
       "status": "concluida",
       "dataCriacao": "2026-07-21T15:00:00.000Z",
       "previsaoEntrega": "2026-07-22",
-      "oc": null
+      "oc": null,
+      "fornecedor": "super"
     },
     {
       "id": "sc_1784633709112_l5e29",
