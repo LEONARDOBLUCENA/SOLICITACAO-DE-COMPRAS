@@ -1,6 +1,55 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1785938089187_5n7a6",
+      "numero": "SC-2026-011",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cinta perfurada",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1/2 preto",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 7,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Parafuso flangeado 4,5x40",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 500,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Parafuso flangeado 4,5x50",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 500,
+          "prioridade": "alta"
+        },
+        {
+          "descricao": "Bucha 6mm com anel",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1000,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-05T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1785937890624_yiyvs",
       "numero": "SC-2026-010",
       "obra": "AVENIDA",
