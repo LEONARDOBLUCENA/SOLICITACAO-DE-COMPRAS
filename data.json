@@ -1,6 +1,55 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1785937890624_yiyvs",
+      "numero": "SC-2026-010",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Pedra de areia",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 250,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Brita 1",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia grossa",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cimento",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Ferro 8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-05T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1785456326715_9wp34",
       "numero": "SC-2026-009",
       "obra": "AVENIDA",
