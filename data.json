@@ -1,6 +1,69 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1786110720230_xnfud",
+      "numero": "SC-2026-012",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Bucha 8mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Parafuso 4,5x50",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Borracha preta",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho 32x90",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Curva 32",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Luva 32mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Cinta perfurada",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-07T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1785938089187_5n7a6",
       "numero": "SC-2026-011",
       "obra": "AVENIDA",
