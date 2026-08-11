@@ -1,6 +1,90 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1786475920880_a29p2",
+      "numero": "SC-2026-014",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cano 150mm silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Junção de esgoto 150x150 silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pasta Lubrificante grande",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho de esgoto 150x45 silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Luva de 150mm silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho 150x90 silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cola PVC grande",
+          "tipo": "material",
+          "unidade": "L",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho 100x45 silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Luva de esgoto 100mm silentium",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cano 100mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-11T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1786388812446_v1pxi",
       "numero": "SC-2026-013",
       "obra": "AVENIDA",
