@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1786969790922_dp44f",
+      "numero": "SC-2026-017",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cimento",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia grossa",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-17T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1786704943377_net9v",
       "numero": "SC-2026-016",
       "obra": "AVENIDA",
