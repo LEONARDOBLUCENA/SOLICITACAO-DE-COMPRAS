@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787055433777_8ztvr",
+      "numero": "SC-2026-018",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Brita 1",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-18T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1786969790922_dp44f",
       "numero": "SC-2026-017",
       "obra": "AVENIDA",
