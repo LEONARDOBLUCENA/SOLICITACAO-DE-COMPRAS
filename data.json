@@ -1,6 +1,188 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787254821645_wa2st",
+      "numero": "SC-2026-020",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Curva eletrocalha 10x10x300",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Eletroduto corrugado preto 3/4",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 250,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Eletroduto corrugado preto 1/2",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Eletroduto corrugado preto 1\"",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 400,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Eletrocalha 10x10x300",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 35,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Emenda eletrocalha 10x10x300",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 45,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Parafuso lentilha e porca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Mão francesa para eletrocalha 300mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 25,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Bucha 6mm com anel",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Mão francesa para eletrocalha 200mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 60,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1.1/4",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 150,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio azul 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio verde 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio vermelho 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 3,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio preto 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio branco 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio amarelo 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio cinza 2,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio azul 1,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 10,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio vermelho 1,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio preto 1,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "FIo branco 1,5mmm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio amarelo 1,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "urgente"
+        },
+        {
+          "descricao": "Fio cinza 1,5mm",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 2,
+          "prioridade": "alta"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-20T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787071513183_hkf4n",
       "numero": "SC-2026-019",
       "obra": "AVENIDA",
