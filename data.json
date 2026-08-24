@@ -1,6 +1,41 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787597622947_sbt2h",
+      "numero": "SC-2026-021",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Ac3 externo",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Espaçador 1,5mm Cunha larga",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cunha",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-24T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787254821645_wa2st",
       "numero": "SC-2026-020",
       "obra": "AVENIDA",
