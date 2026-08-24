@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787599070284_onb59",
+      "numero": "SC-2026-022",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Malha leve 3x2",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Brita 1",
+          "tipo": "material",
+          "unidade": "M²",
+          "quantidade": 0,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-24T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787597622947_sbt2h",
       "numero": "SC-2026-021",
       "obra": "AVENIDA",
