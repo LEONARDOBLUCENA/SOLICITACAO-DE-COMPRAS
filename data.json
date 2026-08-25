@@ -1,6 +1,55 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787698640326_r21s3",
+      "numero": "SC-2026-025",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cano de pvc marrom de 60mm",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 9,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Curva de pvc marrom de 60mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Adaptador de pvc marrom de 60mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "União de pvc marrom 60mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Joelho pvc marrom de 60x45",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-25T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787659269337_iqkdw",
       "numero": "SC-2026-024",
       "obra": "AVENIDA",
