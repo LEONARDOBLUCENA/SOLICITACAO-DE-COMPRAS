@@ -1,6 +1,48 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787659093460_0ld9v",
+      "numero": "SC-2026-023",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Vassouras",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Rodo de plástico",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pazinhas de limpeza",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Saco de lixo",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-25T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787599070284_onb59",
       "numero": "SC-2026-022",
       "obra": "AVENIDA",
