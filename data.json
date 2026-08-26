@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787773640586_n4n1t",
+      "numero": "SC-2026-027",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta acrílico premium fosca super lavável a base de água suvinil cor cinza Pantone 14 - 5002 TCX",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-26T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787743163227_ecbsb",
       "numero": "SC-2026-026",
       "obra": "AVENIDA",
