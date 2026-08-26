@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787743163227_ecbsb",
+      "numero": "SC-2026-026",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Espátulas",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "urgente"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-26T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787698640326_r21s3",
       "numero": "SC-2026-025",
       "obra": "AVENIDA",
