@@ -1,6 +1,48 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787856384370_e35ht",
+      "numero": "SC-2026-029",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Lixa de telinha 220 para girafinha",
+          "tipo": "material",
+          "unidade": "CX",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Garfos sem rosca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lixa 220",
+          "tipo": "material",
+          "unidade": "PC",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fita larga amarela",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-27T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787833845046_bhg03",
       "numero": "SC-2026-028",
       "obra": "AVENIDA",
