@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1787948256083_t57cp",
+      "numero": "SC-2026-030",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Rejunte",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 7,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-28T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1787856384370_e35ht",
       "numero": "SC-2026-029",
       "obra": "AVENIDA",
