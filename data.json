@@ -19,6 +19,76 @@
           "unidade": "UN",
           "quantidade": 12,
           "prioridade": "baixa"
+        },
+        {
+          "descricao": "Enforca gato 4x20",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1000,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Caixa de passagem 30x30 sobrepor ferro",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1x1/4",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Parafuso 4,5x40",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 250,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Caixa de passagem sobrepor 20x20 de ferro",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Suporte 4x4 linha 50000 com tampa 3",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Interruptor linha 50000",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pino macho 3x10A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Suporte inteligente para lâmpada branco",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lâmpada 20w branca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
         }
       ],
       "observacoes": "",
