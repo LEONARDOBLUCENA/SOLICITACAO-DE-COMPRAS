@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1788184364710_d5b40",
+      "numero": "SC-2026-032",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Eletrocalha 20x20 de 200mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletrocalha 10x10 100mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 12,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-08-31T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1788179968064_tghx1",
       "numero": "SC-2026-031",
       "obra": "AVENIDA",
