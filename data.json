@@ -19,6 +19,13 @@
           "unidade": "UN",
           "quantidade": 25,
           "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tomada plug macho 3 pino 10A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
         }
       ],
       "observacoes": "",
