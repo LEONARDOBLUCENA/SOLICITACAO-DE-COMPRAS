@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1788552794262_eguc8",
+      "numero": "SC-2026-034",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta Preto fosco",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta cor Pantone",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-04T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1788463063343_tm0lk",
       "numero": "SC-2026-033",
       "obra": "AVENIDA",
