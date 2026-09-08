@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1788866387429_sms19",
+      "numero": "SC-2026-035",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta acrílica premium fosca cor cinza Pantone 14-5002 tcx 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-08T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1788552794262_eguc8",
       "numero": "SC-2026-034",
       "obra": "AVENIDA",
