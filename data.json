@@ -1,6 +1,97 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1788963378002_9maos",
+      "numero": "SC-2026-036",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Eletrocalha 10x10x300 com virola",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 28,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barra roscada de 3m 1x1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Emenda eletrocalha 10x110",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Curva 90º eletrocalha 10x10",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Parafuso lentilha 1x1/4 com polca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Arruela 1x1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fêmea de 3 pinos 20A preta",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 25,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Macho 3 pinos 10A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "QGBT trifásico externo para 250 ou 300A 36 ou 44 disjuntores, c/ disjuntor geral 3x250A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Régua de tomada com 4 ou 5 tomadas para extensão",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado preto 1/4",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-09T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1788866387429_sms19",
       "numero": "SC-2026-035",
       "obra": "AVENIDA",
