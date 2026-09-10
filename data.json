@@ -1,6 +1,97 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1789000270236_3qmfp",
+      "numero": "SC-2026-037",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tijolos inteiros 6 furos",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 500,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tijolos meios 6 furos",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cimento",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia média",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia grossa",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Brita 1",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Alvenarite",
+          "tipo": "material",
+          "unidade": "L",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cal",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Escora de eucalipto de 3m",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Prego 17x27 simples",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Malha 2x3 reforçada",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-09T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1788963378002_9maos",
       "numero": "SC-2026-036",
       "obra": "AVENIDA",
