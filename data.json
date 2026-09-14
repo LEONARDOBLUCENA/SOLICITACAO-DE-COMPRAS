@@ -1,6 +1,41 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1789410256763_5b2rf",
+      "numero": "SC-2026-039",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta acrílica premium super lavável fosca a base d’água suvinil cor elefante D161",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta acrílica premium fosca superlavavel suvinil cor azul Pantone 306C",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta acrílica premium fosca suvinil cor amarela Pantone 7406C",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-14T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1789043411058_tmzey",
       "numero": "SC-2026-038",
       "obra": "AVENIDA",
