@@ -1,6 +1,62 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1789494065625_gqn11",
+      "numero": "SC-2026-040",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Parafuso lentilha com trava 1/4x1/2",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Porca sextavada 1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Arruela lisa 1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Bucha nylon 6mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lâmpada led bulbo 20w 6500k",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Suporte pvc pendente preto",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-15T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1789410256763_5b2rf",
       "numero": "SC-2026-039",
       "obra": "AVENIDA",
