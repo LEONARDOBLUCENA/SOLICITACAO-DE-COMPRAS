@@ -1,6 +1,69 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1789756781268_ob796",
+      "numero": "SC-2026-043",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone cool gray 8 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone PMS 6056 C 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone deep blue PMS 287 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone PMS 2597 C 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone PMS 200 C",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone PMS 306",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta toque de seda suvinil Pantone PMS 109",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-18T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1789666831331_dvedq",
       "numero": "SC-2026-042",
       "obra": "AVENIDA",
