@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790076525948_1jihy",
+      "numero": "SC-2026-044",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Chumbador Químico",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 4,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Aplicador",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-21T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1789756781268_ob796",
       "numero": "SC-2026-043",
       "obra": "AVENIDA",
