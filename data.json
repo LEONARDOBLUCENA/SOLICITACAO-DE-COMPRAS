@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790077831680_30b40",
+      "numero": "SC-2026-045",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta acrílica premium fosca super lavável a base d’água suvinil cor bege sw 6126 / 6133 / 6154",
+          "tipo": "material",
+          "unidade": "L",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-22T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790076525948_1jihy",
       "numero": "SC-2026-044",
       "obra": "AVENIDA",
