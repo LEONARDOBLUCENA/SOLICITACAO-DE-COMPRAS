@@ -1,21 +1,56 @@
 {
   "solicitacoes": [
     {
-      "id": "sc_1790077831680_30b40",
+      "id": "sc_1790274296710_3pnzp",
       "numero": "SC-2026-045",
       "obra": "AVENIDA",
       "solicitante": "Francieli",
       "itens": [
         {
-          "descricao": "Tinta acrílica premium fosca super lavável a base d’água suvinil cor bege sw 6126 / 6133 / 6154",
+          "descricao": "Lixa de telinha para girafinha",
           "tipo": "material",
-          "unidade": "L",
-          "quantidade": 1,
+          "unidade": "CX",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Garfo de rosca",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lã alta",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lixa 220",
+          "tipo": "material",
+          "unidade": "PCT",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Balde de 18l preto fosco",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Spray preto fosco",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
           "prioridade": "baixa"
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-09-22T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -43,7 +78,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-09-21T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
