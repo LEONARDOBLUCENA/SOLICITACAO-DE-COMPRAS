@@ -1,6 +1,48 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790363226507_4h0c0",
+      "numero": "SC-2026-047",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Malha reforçada",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 9,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barra de ferro 8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 40,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tábua de 30x270",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 12,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Sarrafo de 7x270",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-25T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790363081433_onfs6",
       "numero": "SC-2026-046",
       "obra": "AVENIDA",
