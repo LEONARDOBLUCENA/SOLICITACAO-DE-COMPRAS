@@ -1,22 +1,78 @@
 {
   "solicitacoes": [
     {
-      "id": "sc_1790359154707_6d7jo",
+      "id": "sc_1790363081433_onfs6",
       "numero": "SC-2026-046",
       "obra": "AVENIDA",
       "solicitante": "Francieli",
       "itens": [
         {
-          "descricao": "Tinta preto fosco 18l",
+          "descricao": "Francieli",
           "tipo": "material",
-          "unidade": "BALDE",
-          "quantidade": 3,
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barra de ferro 8",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barra de ferro 4.2",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Prego 17x27",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tábua de pinus 30x270",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Sarrafos de pinus 7x270",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Guias de 15x540 de eucalipto",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Sarrafos de 10x540 de eucalipto",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Prego 19x39",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 10,
           "prioridade": "baixa"
         }
       ],
       "observacoes": "",
       "status": "pendente",
-      "dataCriacao": "2026-09-25T15:00:00.000Z",
+      "dataCriacao": "2026-09-24T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
       "oc": null
