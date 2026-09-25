@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790359154707_6d7jo",
+      "numero": "SC-2026-046",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta preto fosco 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-25T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790274296710_3pnzp",
       "numero": "SC-2026-045",
       "obra": "AVENIDA",
