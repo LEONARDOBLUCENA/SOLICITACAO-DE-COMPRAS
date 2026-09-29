@@ -1,6 +1,41 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790700269032_4o2yk",
+      "numero": "SC-2026-048",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Arame 12",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Arame 18",
+          "tipo": "material",
+          "unidade": "KG",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Torre de andaime de 8m com plataforma",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-29T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790363226507_4h0c0",
       "numero": "SC-2026-047",
       "obra": "AVENIDA",
