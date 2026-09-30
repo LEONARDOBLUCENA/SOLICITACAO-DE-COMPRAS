@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790766755265_brae6",
+      "numero": "SC-2026-049",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta preto fosco premium Colori tintas",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 18,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-30T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790700269032_4o2yk",
       "numero": "SC-2026-048",
       "obra": "AVENIDA",
