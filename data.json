@@ -1,6 +1,55 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790798558876_9817t",
+      "numero": "SC-2026-051",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cimento",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lona preta",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia grossa",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Desempenadeira de aço",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disco de corte para ferro pequeno",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 5,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-30T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790771339419_i6hjg",
       "numero": "SC-2026-050",
       "obra": "AVENIDA",
