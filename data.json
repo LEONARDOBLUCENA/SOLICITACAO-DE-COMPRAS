@@ -7,10 +7,10 @@
       "solicitante": "Francieli",
       "itens": [
         {
-          "descricao": "Tinta preto fosco premium Colori tintas",
+          "descricao": "Tinta preto fosco premium 18l Colori tintas",
           "tipo": "material",
           "unidade": "BALDE",
-          "quantidade": 18,
+          "quantidade": 3,
           "prioridade": "baixa"
         }
       ],
