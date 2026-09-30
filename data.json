@@ -1,6 +1,223 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1790771339419_i6hjg",
+      "numero": "SC-2026-050",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "CD sobrepor metal com barramento 44 dim 100A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "CD sobrepor metal com barramento 44 dim 150 ou 300A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Timer de trilho",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Conector modular bipolar 25A 2 Na 220V 2 polar",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor de 1x32 Din",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor de 2x25A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Chave hotel linha 50000 branco",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 700,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm amarelo",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm cinza",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 4mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 4mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 4mm verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 6mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 600,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 6mm verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 6mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 6mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 6mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tampa cega 3x3 redonda preta",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 25,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tampa cega 4x4 redonda preta",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor DR tetrapolar 125A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor DR tetrapolar 250A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-09-30T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1790766755265_brae6",
       "numero": "SC-2026-049",
       "obra": "AVENIDA",
