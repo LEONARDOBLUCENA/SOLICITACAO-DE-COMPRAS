@@ -1,6 +1,34 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1791398843380_adga1",
+      "numero": "SC-2026-054",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta acrílica cor mata Atlântica 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tinta acrílica cor cassino 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-07T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1791380876601_3fdok",
       "numero": "SC-2026-053",
       "obra": "AVENIDA",
