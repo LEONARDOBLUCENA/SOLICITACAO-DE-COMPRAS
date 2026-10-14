@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1791979166278_hpxso",
+      "numero": "SC-2026-057",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tinta preto fosco suvinil 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-14T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1791899574167_3cpg2",
       "numero": "SC-2026-056",
       "obra": "AVENIDA",
