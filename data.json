@@ -1,6 +1,202 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1791980745470_efy4k",
+      "numero": "SC-2026-058",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tartaruga preta",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 14,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Lâmpada luz branca 10W",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 14,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletrocalha de 50x50 com virola",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Barra roscada 1x1/4",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3x10A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor 3x25A",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fita isolante 33+3M",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Emenda de eletrocalha 50x50",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 55,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Parafuso lentilha 1x1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Porca 1x1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Arruela 1x1/4",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 400,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Suporte eletrocalha 50x50 para barra roscada",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Enforca gato 20cmx4mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 800,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo 10mm azul flex kv",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo 10mm vermelho flex 1kv",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo 10mm preto flex 1kv",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo 10mm branco flex 1kv",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo 10mm verde flex 1kv",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 16mm 1kv azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 16mm 1kv vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 16mm 1kv branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 16mm 1kv preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 16mm 1kv verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1x1/4 preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado 3/4 preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 150,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1 preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-14T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1791979166278_hpxso",
       "numero": "SC-2026-057",
       "obra": "AVENIDA",
