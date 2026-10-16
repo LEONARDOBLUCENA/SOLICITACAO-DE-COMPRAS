@@ -1,6 +1,230 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1792170476893_eel12",
+      "numero": "SC-2026-059",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cabo flex 1kv EPR/xlpe 50mm² azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 75,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv EPR/xlpe 50mm² vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 75,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv EPR/xlpe 50mm² preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 75,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv EPR/xlpe 50mm² branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 75,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 150mm² azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 150mm² vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 150mm² preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 150mm² branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 25mm² verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 75,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 25mm² verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 16mm²  azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 16mm²  vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 16mm²  preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 16mm²  branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo verde flex 16mm²",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 50mm² azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 50mm² vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 50mm² preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 50mm² branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 25mm² verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 15,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm² azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 70,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm² vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 70,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm² preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 70,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm² branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 70,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 25mm² verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm² azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm²  vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm²  preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 1kv 70mm²  branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 30,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cabo flex 25mm² verde",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-16T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1791980745470_efy4k",
       "numero": "SC-2026-058",
       "obra": "AVENIDA",
