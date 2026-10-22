@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1792678737772_pufr6",
+      "numero": "SC-2026-060",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Preto fosco suvinil 18l",
+          "tipo": "material",
+          "unidade": "BALDE",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-22T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1792170476893_eel12",
       "numero": "SC-2026-059",
       "obra": "AVENIDA",
