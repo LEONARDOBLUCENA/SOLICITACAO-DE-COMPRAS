@@ -1,6 +1,41 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1793024092679_rq2vi",
+      "numero": "SC-2026-061",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Espuma Expansiva",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Chapas de compensado (madeirite preto)",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Rompedor pequeno",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-26T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1792678737772_pufr6",
       "numero": "SC-2026-060",
       "obra": "AVENIDA",
