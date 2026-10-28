@@ -1,6 +1,48 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1793193334570_bn3kt",
+      "numero": "SC-2026-062",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Espude plástico para mictórios",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Kit de parafusos para vasos buchas 10",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 12,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Anel de vedação para vaso",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Tubo de ligação de metal para válvula de descarga",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 3.01,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-26T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1793024092679_rq2vi",
       "numero": "SC-2026-061",
       "obra": "AVENIDA",
