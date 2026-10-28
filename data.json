@@ -31,7 +31,7 @@
           "descricao": "Tubo de ligação de metal para válvula de descarga",
           "tipo": "material",
           "unidade": "UN",
-          "quantidade": 3.01,
+          "quantidade": 3,
           "prioridade": "baixa"
         }
       ],
