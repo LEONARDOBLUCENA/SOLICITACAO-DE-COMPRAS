@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1793362506479_uurc4",
+      "numero": "SC-2026-066",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Bomba submersívell de esgoto (38m³/h x 6mca, 3 cv, trifásica, sólidos até 50mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-10-29T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1793298907209_9jcvk",
       "numero": "SC-2026-065",
       "obra": "AVENIDA",
