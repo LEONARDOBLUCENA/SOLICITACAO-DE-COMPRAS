@@ -1,6 +1,48 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1793814777844_5cdzk",
+      "numero": "SC-2026-068",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Disjuntor 6ka trifásico 63A Soprano",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor Industrial Trifásico 150A Soprano",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Disjuntor industrial trifásico 125A Soprano",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Terminal de compressão 50mm",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 8,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-03T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1793735223518_hfzm7",
       "numero": "SC-2026-067",
       "obra": "AVENIDA",
