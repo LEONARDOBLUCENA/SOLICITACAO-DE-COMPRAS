@@ -1,71 +1,29 @@
 {
   "solicitacoes": [
     {
-      "id": "sc_1794223377900_kqt19",
-      "numero": "SC-2026-072",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Brita 2",
-          "tipo": "material",
-          "unidade": "M³",
-          "quantidade": 6,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Mangueira corrugada preta 100mm para dreno",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 20,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Bidim para drenagem",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 10,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-09T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1794223050273_8htcu",
+      "id": "sc_1794255522115_0rr00",
       "numero": "SC-2026-071",
       "obra": "AVENIDA",
       "solicitante": "Francieli",
       "itens": [
         {
-          "descricao": "Cabo flex vermelho 10mm2",
+          "descricao": "Balde de 18l tinta toque de seda suvinil pantone Deep Blue PMS 287",
           "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
+          "unidade": "BALDE",
+          "quantidade": 1,
           "prioridade": "baixa"
         },
         {
-          "descricao": "Cabo flex branco 10mm2",
+          "descricao": "Balde de 18l tinta toque de seda suvinil pantone PMS 306",
           "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Cabo flex azul 10mm2",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 200,
+          "unidade": "BALDE",
+          "quantidade": 2,
           "prioridade": "baixa"
         }
       ],
       "observacoes": "",
       "status": "pendente",
-      "dataCriacao": "2026-11-09T15:00:00.000Z",
+      "dataCriacao": "2026-11-06T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
       "oc": null
