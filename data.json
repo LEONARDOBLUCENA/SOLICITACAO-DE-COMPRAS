@@ -1,6 +1,41 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794488538562_kxu4g",
+      "numero": "SC-2026-073",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Pó de brita",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "PV dissipador 1m de diâmentro com tampa reforçada",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fossa polietileno 500l",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-10T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794332009534_9svmn",
       "numero": "SC-2026-072",
       "obra": "AVENIDA",
