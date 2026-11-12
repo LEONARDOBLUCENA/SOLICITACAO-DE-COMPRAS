@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794509006151_gov1i",
+      "numero": "SC-2026-075",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Mão francesa para prateleira reforçada",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-12T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794502756607_7pjqc",
       "numero": "SC-2026-074",
       "obra": "AVENIDA",
