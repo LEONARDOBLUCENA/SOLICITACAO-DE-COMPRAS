@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794502756607_7pjqc",
+      "numero": "SC-2026-074",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "tela laranja",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-12T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794488538562_kxu4g",
       "numero": "SC-2026-073",
       "obra": "AVENIDA",
