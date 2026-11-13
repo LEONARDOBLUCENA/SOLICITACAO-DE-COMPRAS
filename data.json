@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794597839856_qy25c",
+      "numero": "SC-2026-078",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Pó de brita",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 6,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-13T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794597202544_73miw",
       "numero": "SC-2026-077",
       "obra": "AVENIDA",
