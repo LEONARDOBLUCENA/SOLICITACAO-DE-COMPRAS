@@ -1,6 +1,55 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794856220874_ov4dp",
+      "numero": "SC-2026-081",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Cimento",
+          "tipo": "material",
+          "unidade": "SC",
+          "quantidade": 60,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Pó de brita",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 40,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Areia média",
+          "tipo": "material",
+          "unidade": "M³",
+          "quantidade": 1,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Cordão 20x1",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 31,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Bloqueto",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-16T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794836801233_s2ntc",
       "numero": "SC-2026-080",
       "obra": "AVENIDA",
