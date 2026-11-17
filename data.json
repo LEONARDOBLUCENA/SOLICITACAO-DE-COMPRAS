@@ -9,7 +9,7 @@
         {
           "descricao": "laje basalto quadrada",
           "tipo": "material",
-          "unidade": "M",
+          "unidade": "M²",
           "quantidade": 175,
           "prioridade": "baixa"
         }
