@@ -1,6 +1,97 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1794946256568_ihy10",
+      "numero": "SC-2026-083",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Tomada para caixa de ferro Tramontina com tampa",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Eletroduto corrugado 1x1/2",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 50,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 10mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fita isolante 3m",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 20,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 2,5mm azul",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 200,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm preto",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm branco",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        },
+        {
+          "descricao": "Fio 1,5mm vermelho",
+          "tipo": "material",
+          "unidade": "M",
+          "quantidade": 100,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-17T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1794921298895_8quc7",
       "numero": "SC-2026-082",
       "obra": "AVENIDA",
