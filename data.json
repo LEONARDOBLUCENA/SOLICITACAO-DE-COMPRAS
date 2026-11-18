@@ -10,7 +10,7 @@
           "descricao": "Pedra de areia",
           "tipo": "material",
           "unidade": "UN",
-          "quantidade": 25,
+          "quantidade": 50,
           "prioridade": "baixa"
         }
       ],
