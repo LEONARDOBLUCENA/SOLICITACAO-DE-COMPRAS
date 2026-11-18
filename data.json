@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1795023572803_ws6po",
+      "numero": "SC-2026-087",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Plástico bolha",
+          "tipo": "material",
+          "unidade": "ROLO",
+          "quantidade": 3,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-18T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1795007566496_zebnk",
       "numero": "SC-2026-086",
       "obra": "AVENIDA",
