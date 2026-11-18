@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1795007566496_zebnk",
+      "numero": "SC-2026-086",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Pedra de areia",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 25,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-18T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1795005143965_e8j8j",
       "numero": "SC-2026-085",
       "obra": "AVENIDA",
