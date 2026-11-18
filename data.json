@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1795026984322_3g5rs",
+      "numero": "SC-2026-088",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "fita crepe azul",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 10,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-18T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1795023572803_ws6po",
       "numero": "SC-2026-087",
       "obra": "AVENIDA",
