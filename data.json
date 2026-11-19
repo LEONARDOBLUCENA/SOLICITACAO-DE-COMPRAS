@@ -1,218 +1,29 @@
 {
   "solicitacoes": [
     {
-      "id": "sc_1795026984322_3g5rs",
-      "numero": "SC-2026-088",
+      "id": "sc_1795093272430_3xr3p",
+      "numero": "SC-2026-082",
       "obra": "AVENIDA",
-      "solicitante": "Francieli",
+      "solicitante": "Franiceli",
       "itens": [
         {
-          "descricao": "fita crepe azul",
-          "tipo": "material",
-          "unidade": "UN",
-          "quantidade": 10,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-18T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1795023572803_ws6po",
-      "numero": "SC-2026-087",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Plástico bolha",
-          "tipo": "material",
-          "unidade": "ROLO",
-          "quantidade": 3,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-18T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1795007566496_zebnk",
-      "numero": "SC-2026-086",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Pedra de areia",
+          "descricao": "Mão francesa reforçada",
           "tipo": "material",
           "unidade": "UN",
           "quantidade": 60,
           "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-18T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1795005143965_e8j8j",
-      "numero": "SC-2026-085",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
+        },
         {
-          "descricao": "Racha",
+          "descricao": "Parafuso nº 30",
           "tipo": "material",
           "unidade": "UN",
-          "quantidade": 2,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "concluida",
-      "dataCriacao": "2026-11-18T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1794958546609_tq8iw",
-      "numero": "SC-2026-084",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "laje basalto quadrada",
-          "tipo": "material",
-          "unidade": "M²",
-          "quantidade": 175,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-17T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1794946256568_ihy10",
-      "numero": "SC-2026-083",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Tomada para caixa de ferro Tramontina com tampa",
-          "tipo": "material",
-          "unidade": "UN",
-          "quantidade": 10,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Eletroduto corrugado 1x1/2",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 50,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 10mm vermelho",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fita isolante 3m",
-          "tipo": "material",
-          "unidade": "UN",
-          "quantidade": 20,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 2,5mm preto",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 2,5mm vermelho",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 2,5mm branco",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 2,5mm azul",
-          "tipo": "material",
-          "unidade": "M",
           "quantidade": 200,
           "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 1,5mm preto",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 1,5mm branco",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Fio 1,5mm vermelho",
-          "tipo": "material",
-          "unidade": "M",
-          "quantidade": 100,
-          "prioridade": "baixa"
         }
       ],
       "observacoes": "",
-      "status": "concluida",
-      "dataCriacao": "2026-11-17T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1794921298895_8quc7",
-      "numero": "SC-2026-082",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Preto fosco suvinil 18l",
-          "tipo": "material",
-          "unidade": "BALDE",
-          "quantidade": 1,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "concluida",
-      "dataCriacao": "2026-11-17T15:00:00.000Z",
+      "status": "pendente",
+      "dataCriacao": "2026-11-16T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
       "oc": null
@@ -323,7 +134,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-16T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -351,7 +162,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-13T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -372,7 +183,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-13T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -393,7 +204,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-13T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -421,7 +232,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-13T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -442,7 +253,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-12T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -463,7 +274,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-12T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -498,7 +309,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-10T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -519,7 +330,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-09T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -547,7 +358,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-06T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -596,7 +407,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-05T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -624,7 +435,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-04T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -666,7 +477,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-11-03T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -764,7 +575,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-30T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -785,7 +596,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-29T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -806,7 +617,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-29T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -834,7 +645,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-29T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -869,7 +680,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-28T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -911,7 +722,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-26T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
@@ -946,7 +757,7 @@
         }
       ],
       "observacoes": "",
-      "status": "concluida",
+      "status": "pendente",
       "dataCriacao": "2026-10-26T15:00:00.000Z",
       "previsaoEntrega": null,
       "fornecedor": null,
