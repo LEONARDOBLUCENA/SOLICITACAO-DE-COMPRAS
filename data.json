@@ -1,6 +1,27 @@
 {
   "solicitacoes": [
     {
+      "id": "sc_1795112211111_p9rm9",
+      "numero": "SC-2026-083",
+      "obra": "AVENIDA",
+      "solicitante": "Francieli",
+      "itens": [
+        {
+          "descricao": "Ralo de 150 de inox",
+          "tipo": "material",
+          "unidade": "UN",
+          "quantidade": 2,
+          "prioridade": "baixa"
+        }
+      ],
+      "observacoes": "",
+      "status": "pendente",
+      "dataCriacao": "2026-11-19T15:00:00.000Z",
+      "previsaoEntrega": null,
+      "fornecedor": null,
+      "oc": null
+    },
+    {
       "id": "sc_1795093272430_3xr3p",
       "numero": "SC-2026-082",
       "obra": "AVENIDA",
