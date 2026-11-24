@@ -1,72 +1,16 @@
 {
   "solicitacoes": [
     {
-      "id": "sc_1795436719109_654zq",
-      "numero": "SC-2026-085",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Cal",
-          "tipo": "material",
-          "unidade": "SC",
-          "quantidade": 5,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Cimento",
-          "tipo": "material",
-          "unidade": "SC",
-          "quantidade": 5,
-          "prioridade": "baixa"
-        },
-        {
-          "descricao": "Prego 17x27 simples",
-          "tipo": "material",
-          "unidade": "KG",
-          "quantidade": 5,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-23T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1795179132712_vrfsh",
-      "numero": "SC-2026-084",
-      "obra": "AVENIDA",
-      "solicitante": "Francieli",
-      "itens": [
-        {
-          "descricao": "Tijolinho macico",
-          "tipo": "material",
-          "unidade": "UN",
-          "quantidade": 40,
-          "prioridade": "baixa"
-        }
-      ],
-      "observacoes": "",
-      "status": "pendente",
-      "dataCriacao": "2026-11-20T15:00:00.000Z",
-      "previsaoEntrega": null,
-      "fornecedor": null,
-      "oc": null
-    },
-    {
-      "id": "sc_1795112211111_p9rm9",
+      "id": "sc_1795531399230_zoh9u",
       "numero": "SC-2026-083",
       "obra": "AVENIDA",
       "solicitante": "Francieli",
       "itens": [
         {
-          "descricao": "Ralo de 150 de inox",
+          "descricao": "Espuma expansiva",
           "tipo": "material",
           "unidade": "UN",
-          "quantidade": 2,
+          "quantidade": 1,
           "prioridade": "baixa"
         }
       ],
